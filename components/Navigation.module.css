@@ -7,6 +7,23 @@
   padding: 1rem;
   transition: all 0.2s ease-in-out;
 }
+
+.navigationJustify {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 4rem;
+  margin-right: auto;
+  z-index: 3;
+}
+a.gettingStarted {
+  color: #2f8fff;
+  *border: 1px solid #bdc1c6!important;
+}
+
+.toggleJustify {
+  display: flex;
+  justify-content: flex-end;
+}
 /*Dark Lght Theme Navigations Styles*/
 .navigation.light {
   background-color: #fff;
@@ -36,7 +53,7 @@ color: #f3f9ff;
   margin: 0;
   padding: 0;
   width: 120px;
-  height: auto;
+  height: 15px;
   justify-content: space-between;
   align-items: center;
 }

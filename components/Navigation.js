@@ -1,6 +1,7 @@
 import styles from './Navigation.module.css';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navigation() {
   const { theme, setTheme } = useTheme();
@@ -9,35 +10,39 @@ export default function Navigation() {
     <nav className={styles.navigationContainer}>
     <div className={styles.center}>
       <Link href="/" >
-    <img src="/kotec.svg" alt="Kotec Logo" className={styles.logo} />
+    <Image src="/kotec.svg" alt="Kotec Logo" className={styles.logo} width={120} height={15} />
     </Link>
     </div>
+    <div className={styles.navigationJustify}>
       <ul>
         <li>
-          <a href="/">Начало работы</a>
+          <Link href="/" className={styles.gettingStarted}>Начало работы</Link>
         </li>
         <li>
-          <a href="/services">Услуги</a>
+          <Link href="/services">Услуги</Link>
         </li>
         <li>
-          <a href="/works">Примеры работ</a>
+          <Link href="/works">Примеры работ</Link>
         </li>
         <li>
-          <a href="/about">О нас</a>
+          <Link href="/about">О нас</Link>
         </li>
         <li>
-          <a href="/contacts">Контакты</a>
+          <Link href="/contacts">Контакты</Link>
         </li>
       </ul>
-      <img
+      </div>
+      <div className={styles.toggleJustify}>
+      <Image
         src={theme === 'dark' ? '/lightmode.svg' : '/darkmode.svg'}
         alt={theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
-        width="24"
-        height="24"
+        width={20}
+        height={20}
         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
         className={theme === 'dark' ? 'light-mode-icon' : 'dark-mode-icon'}
         style={{ cursor: 'pointer' }}
       />
+      </div>
     </nav>
   </div>
   );
