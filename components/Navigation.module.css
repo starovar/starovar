@@ -1,3 +1,4 @@
+
 .navigationContainer {
   display: flex;
   justify-content: space-between;
@@ -18,6 +19,10 @@
 a.gettingStarted {
   color: #2f8fff;
   *border: 1px solid #bdc1c6!important;
+}
+
+.gettingStarted.dark {
+  color: #2f8fff;
 }
 
 .toggleJustify {
@@ -52,8 +57,8 @@ color: #f3f9ff;
   display: flex;
   margin: 0;
   padding: 0;
-  width: 120px;
-  height: 15px;
+  width: 110px;
+  height: 17px;
   justify-content: space-between;
   align-items: center;
 }
@@ -92,7 +97,7 @@ color: #f3f9ff;
 /*END copy glow from Home module css*/
   
   .navigation ul {
-    display: flex;
+    display: inherit; /*before adding submenu it was "flex"*/
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -113,10 +118,70 @@ color: #f3f9ff;
   .navigation a:hover {
     color: #0070f3;
   }
-  
-  .light-mode-icon {
-    color: #f5f5f5;
-  }
+
+/*
+Submenu Styles Component
+*/
+@media (min-width: 900px) {
+.submenu {
+  position: absolute;
+  top: calc(5% + 5px); 
+  max-width: 400px;
+  min-width: 300px;
+  z-index: 100;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: .8rem!important;
+  list-style: none;
+  transform: translateX(-36%);
+  transition: all .2s ease-in-out;
+}
+
+.submenu li {
+  *margin-bottom: 1rem;
+  padding: 0.25rem;
+}
+
+.submenu li a {
+  padding: 1rem;
+  margin: 0;
+  display: block;
+  font-weight: 500;
+}
+
+.submenu li:last-child {
+  margin-bottom: 0;
+}
+
+.dropdownIcon {
+  margin-left: 5px;
+  vertical-align: middle;
+  transition: transform 0.2s ease-out;
+}
+
+.dropdownIcon.rotate {
+  transform: rotate(180deg);
+}
+
+.submenuIcon {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+
+.submenuDescription {
+  display: block;
+  font-size: 12px;
+  font-weight: 300;
+  margin-left: 28px;
+}
+
+
+}
+/*
+END Submenu Styles Component
+*/
 
   @media (min-width: 1400px) {
     .navigationContainer {
@@ -124,3 +189,6 @@ color: #f3f9ff;
       margin: 0 auto;
     }
   }
+
+
+  /* Стили для анимации */
