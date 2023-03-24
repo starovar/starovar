@@ -41,9 +41,7 @@ body {
 }
 
 
-body {
-  font-family: 'Roboto', sans-serif;
-}
+
 
 * {
   box-sizing: border-box;
@@ -51,9 +49,7 @@ body {
   padding: 0;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-}
+
 
 h1,
 h2,
@@ -64,7 +60,10 @@ h6 {
   font-family: "Open Sans", sans-serif;
 }
 
-
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -72,9 +71,8 @@ h6 {
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 232, 234, 237;
+  --background-start-rgb: 255, 255, 250;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -84,10 +82,7 @@ h6 {
     #0071ff33 160deg,
     transparent 360deg
   );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
+
 
   --tile-start-rgb: 239, 245, 249;
   --tile-end-rgb: 228, 232, 233;
@@ -105,13 +100,18 @@ h6 {
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+ }
+
 }
 
 @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 0, 4, 7;
+    --background-end-rgb: 0, 13, 27;
 
     --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
     --secondary-glow: linear-gradient(
@@ -152,7 +152,7 @@ body {
   overflow-x: hidden;
 }
 
-body {
+body.light {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -167,22 +167,9 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
-
-/* светлая тема */
-:root {
-  --color-bg: #f5f5f5; /* фон */
-  --color-text: #333; /* текст */
-}
-
 /* темная тема */
 .dark :root {
-  --color-bg: #222; /* фон */
+  --color-bg: #000f1b; /* фон */
   --color-text: #f5f5f5; /* текст */
 }
 

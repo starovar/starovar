@@ -53,6 +53,7 @@ color: #f3f9ff;
   color: #0070f3;
   }
 
+
 .logo {
   display: flex;
   margin: 0;
@@ -136,6 +137,11 @@ Submenu Styles Component
   list-style: none;
   transform: translateX(-36%);
   transition: all .2s ease-in-out;
+}
+
+.submenu.dark {
+  background-color: #202124;
+  color: #e8eaed;
 }
 
 .submenu li {

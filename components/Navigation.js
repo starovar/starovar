@@ -44,11 +44,11 @@ export default function Navigation() {
           <Link id="servicesButton" href="" onClick={() => setIsMenuOpen(!isMenuOpen)} className={`${styles.services} ${theme === 'dark' ? styles.dark : styles.light}`}>
             Услуги
             <Image id="servicesButton"
-                  src="/down.svg"
+                  src={theme === 'dark' ? '/down.svg' : '/downlight.svg'}
                   alt="Dropdown Arrow"
                   width={14}
                   height={14}
-                  className={`${styles.dropdownIcon} ${styles.dropdownIcon} ${isMenuOpen ? styles.rotate : ''} ${theme === 'dark' ? styles.dark : styles.light}`}
+                  className={`${styles.dropdownIcon} ${isMenuOpen ? styles.rotate : ''} ${theme === 'dark' ? styles.dark : styles.light}`}
                 />
             </Link>
             {isMenuOpen && (
