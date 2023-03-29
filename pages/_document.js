@@ -1,27 +1,18 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
-import { initializeTheme } from 'next-themes';
+import React from 'react'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
-  static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps };
-  }
-
-  componentDidMount() {
-    initializeTheme();
-  }
-
   render() {
     return (
-      <Html className="dark">
+      <Html lang="en">
         <Head />
-        <body>
+        <body className="bg-white dark:bg-black text-white dark:text-black">
           <Main />
           <NextScript />
         </body>
       </Html>
-    );
+    )
   }
 }
 
-export default MyDocument;
+export default MyDocument

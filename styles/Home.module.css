@@ -3,13 +3,14 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 0 0.6rem;
   min-height: 100vh;
+  grid-gap: 24px;
 }
 
 
 .description {
-  display: none;
+  display: flex;
   justify-content: inherit;
   align-items: inherit;
   font-size: 0.85rem;
@@ -42,35 +43,39 @@
 
 .grid {
   display: grid;
+  grid-gap: 24px;
   grid-template-columns: repeat(4, minmax(25%, auto));
   width: var(--max-width);
   max-width: 100%;
+  margin: 0;
 }
 
 .card {
   padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
+  border-radius: 12px;
   background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
+  border: 1px solid rgba(17, 24, 39, 0.1);
+  transition: background 100ms, border 100ms;
 }
 
 .card span {
   display: inline-block;
-  transition: transform 200ms;
+  transition: transform 100ms;
 }
 
 .card h2 {
-  font-weight: 600;
+  font-weight: 900;
   margin-bottom: 0.7rem;
+  color: rgb(17, 24, 39);
+  font-size: .875rem;
 }
 
 .card p {
   margin: 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   max-width: 30ch;
+  color: rgb(75,85,99);
 }
 
 .center {
@@ -155,8 +160,8 @@
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+    background: rgb(249, 250, 251);
+    border: 1px solid rgba(17, 24, 39, 0.2);
   }
 
   .card:hover span {
@@ -182,7 +187,7 @@
 
   .grid {
     grid-template-columns: 1fr;
-    margin-bottom: 120px;
+    margin: 6rem 0;
     max-width: 320px;
     text-align: center;
   }
