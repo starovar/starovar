@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Home, Phone, Inbox, Globe, Twitter, Facebook, Instagram, Youtube, GitHub } from 'react-feather';
+import { Home, Phone, Inbox, Globe, Twitter, Facebook, Instagram, Youtube, GitHub } from 'react-feather'
+import { useTheme } from 'next-themes'
 
 function Footer() {
   const socialIcons = [
@@ -17,9 +18,11 @@ function Footer() {
     { name: "Services", href: "/services", icon: <Inbox className="h-5 w-5" /> },
     { name: "Contact", href: "/contact", icon: <Globe className="h-5 w-5" /> },
   ]
+  
+  const { theme, setTheme } = useTheme();
 
   return (
-    <footer className="bg-white">
+    <footer className={`footer ${theme === 'dark' ? 'dark' : ''}`}>
       <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <div className="flex items-center">

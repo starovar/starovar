@@ -12,6 +12,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { useTheme } from 'next-themes'
 
 const products = [
   { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
@@ -31,14 +32,15 @@ function classNames(...classes) {
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const { theme, setTheme } = useTheme();
 
   return (
-    <header className="bg-white">
+    <header className={`header ${theme === 'dark' ? 'dark' : ''}`}>
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 border-b border-gray-900/10" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Kotec</span>
-            <Image className="h-8 w-auto" src="kotec.svg" width={38} height={32} alt="" />
+            <Image className="h-8 w-auto" src="kotec.svg" width={32} height={32} alt="" />
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -128,7 +130,7 @@ export default function Example() {
               <Image
                 className="h-8 w-auto"
                 src="kotec.svg"
-                width={38}
+                width={32}
                 height={32}
                 alt=""
               />
