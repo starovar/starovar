@@ -38,7 +38,7 @@ export default function Example() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Kotec</span>
-            <Image className="h-8 w-auto" src="kotec.svg" width={38} height={32} alt="" />
+            <Image className="h-8 w-auto" src="kotec.svg" width={32} height={32} alt="" />
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -128,7 +128,7 @@ export default function Example() {
               <Image
                 className="h-8 w-auto"
                 src="kotec.svg"
-                width={38}
+                width={32}
                 height={32}
                 alt=""
               />
