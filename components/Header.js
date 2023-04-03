@@ -15,11 +15,11 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/
 import { useTheme } from 'next-themes'
 
 const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+  { name: 'Веб-дизайн', description: 'Отримайте унікальний дизайн для вашого сайту, що залишить враження', href: '#', icon: ChartPieIcon },
+  { name: 'Брендінг', description: 'Створимо легендарний бренд, який запам’ятають на довго', href: '#', icon: CursorArrowRaysIcon },
+  { name: 'Маркетинг', description: 'Сучасні маркетингові рішення від стратегії до втілення у життя', href: '#', icon: FingerPrintIcon },
+  { name: 'Управління веб-сайтами', description: 'Забезпечимо стабільність та безпеку вашого сайту.', href: '#', icon: SquaresPlusIcon },
+  { name: 'Електронна комерція', description: 'Розробка та підтримка сучасних інтернет магазинів', href: '#', icon: ArrowPathIcon },
 ]
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
@@ -35,12 +35,19 @@ export default function Example() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <header className={`header ${theme === 'dark' ? 'dark' : ''}`}>
+    <header className="bg-white dark:bg-black text-white dark:text-black">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 border-b border-gray-900/10" aria-label="Global">
-        <div className="flex lg:flex-1">
-          <Link href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Kotec</span>
-            <Image className="h-8 w-auto" src="kotec.svg" width={32} height={32} alt="" />
+        <div className="flex lg:flex-1 text-indigo-600 dark:text-indigo-300 text-2xl font-bold">
+          <Link href="/" className="-m-1.5 p-1.5 flex items-center">
+            <svg
+            class="h-6 w-auto mr-2 logo"
+            viewBox="0 0 197 197"
+            fill="#4f46e5"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M175.27,197H52.11a9,9,0,0,1-6.37-15.36l61.59-61.59a9,9,0,0,1,12.72,0l61.59,61.59A9,9,0,0,1,175.27,197Z" fill="#4f46e5"/>
+            <path d="M181.64,15.36,15.36,181.64A9,9,0,0,1,0,175.27V121.69a9,9,0,0,1,2.64-6.37L115.32,2.64A9,9,0,0,1,121.69,0h53.58A9,9,0,0,1,181.64,15.36Z" fill="#4f46e5"/>
+          </svg>
+          Kotec Labs
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -56,7 +63,7 @@ export default function Example() {
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              Product
+              Послуги
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
 
@@ -106,13 +113,16 @@ export default function Example() {
           </Popover>
 
           <Link href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Features
+            Портфоліо
           </Link>
           <Link href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Marketplace
+            Про нас
           </Link>
           <Link href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Company
+            Контакти
+          </Link>
+          <Link href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            Блог
           </Link>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -124,16 +134,17 @@ export default function Example() {
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <Image
-                className="h-8 w-auto"
-                src="kotec.svg"
-                width={32}
-                height={32}
-                alt=""
-              />
+          <div className="flex items-center justify-between text-indigo-600 dark:text-indigo-300 text-2xl font-black">
+            <Link href="/" className="-m-1.5 p-1.5 flex items-center">
+              <svg
+            className="h-6 w-auto mr-2 logo"
+            viewBox="0 0 197 197"
+            fill="#4f46e5"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M175.27,197H52.11a9,9,0,0,1-6.37-15.36l61.59-61.59a9,9,0,0,1,12.72,0l61.59,61.59A9,9,0,0,1,175.27,197Z" fill="#4f46e5"/>
+            <path d="M181.64,15.36,15.36,181.64A9,9,0,0,1,0,175.27V121.69a9,9,0,0,1,2.64-6.37L115.32,2.64A9,9,0,0,1,121.69,0h53.58A9,9,0,0,1,181.64,15.36Z" fill="#4f46e5"/>
+          </svg>
+          Kotec Labs
             </Link>
             <button
               type="button"
@@ -151,7 +162,7 @@ export default function Example() {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-gray-900 text-base font-semibold leading-7 hover:bg-gray-50">
-                        Product
+                        Послуги
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
                           aria-hidden="true"
@@ -172,16 +183,10 @@ export default function Example() {
                     </>
                   )}
                 </Disclosure>
-                <Link
-                  href="#"
-                  className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
+                <Link href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                   Features
                 </Link>
-                <Link
-                  href="#"
-                  className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
+                <Link href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                   Marketplace
                 </Link>
                 <Link

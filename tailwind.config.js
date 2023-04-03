@@ -10,7 +10,9 @@ module.exports = {
     "./styles/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      translate: ['group-hover', 'hover'],
+    },
   },
   plugins: [],
 }

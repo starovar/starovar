@@ -6,6 +6,7 @@
   padding: 0 0.6rem;
   min-height: 100vh;
   grid-gap: 24px;
+  padding-bottom: 5.625rem;
 }
 
 
@@ -44,7 +45,7 @@
 .grid {
   display: grid;
   grid-gap: 24px;
-  grid-template-columns: repeat(4, minmax(25%, auto));
+  grid-template-columns: repeat(4, minmax(20%, auto));
   width: var(--max-width);
   max-width: 100%;
   margin: 0;
@@ -64,7 +65,7 @@
 }
 
 .card h2 {
-  font-weight: 900;
+  font-weight: 600;
   margin-bottom: 0.7rem;
   color: rgb(17, 24, 39);
   font-size: .875rem;
@@ -271,6 +272,9 @@
   .logo,
   .thirteen img {
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+  }
+  .card h2 {
+    color: gray;
   }
 }
 

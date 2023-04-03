@@ -21,10 +21,10 @@ export default function Home() {
         <div className="mx-auto max-w-2xl py-12 sm:py-8 lg:py-16">
           <div className="sr-only sm:not-sr-only sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Announcing our next round of funding.{' '}
-              <Link href="#" className="font-semibold text-indigo-600">
+            Оголошуємо наш наступний раунд кодування.{' '}
+              <Link href="#" className="group font-semibold text-gray-600">
                 <span className="absolute inset-0" aria-hidden="true" />
-                Read more <span aria-hidden="true">&rarr;</span>
+                Детальніше <span className="transition inline-block group-hover:translate-x-0.5" aria-hidden="true">&rarr;</span>
               </Link>
             </div>
           </div>
@@ -36,15 +36,15 @@ export default function Home() {
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
               fugiat veniam occaecat fugiat aliqua.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-10 flex items-center justify-center gap-x-4">
               <Link
                 href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="transition rounded-md border border-transparent bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
               </Link>
-              <Link href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                Learn more <span aria-hidden="true">→</span>
+              <Link href="#" className="group transition rounded-md border text-indigo-600 px-5 py-2.5 text-sm font-semibold hover:bg-indigo-50 hover:border-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                Learn more <span className="transition inline-block group-hover:translate-x-0.5" aria-hidden="true">&rarr;</span>
               </Link>
             </div>
           </div>
@@ -58,10 +58,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
+            <h2 className={styles.incard}>
+              Docs <span>&rarr;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={styles.incard}>
               Find in-depth information about Next.js features and&nbsp;API.
             </p>
           </Link>
@@ -72,10 +72,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
+            <h2 className={styles.incard}>
+              Learn <span>&rarr;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={styles.incard}>
               Learn about Next.js in an interactive course with&nbsp;quizzes!
             </p>
           </Link>
@@ -86,10 +86,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
+            <h2 className={styles.incard}>
+              Templates <span>&rarr;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={styles.incard}>
               Discover and deploy boilerplate example Next.js&nbsp;projects.
             </p>
           </Link>
@@ -100,10 +100,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
+            <h2 className={styles.incard}>
+              Deploy <span>&rarr;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={styles.incard}>
               Instantly deploy your Next.js site to a shareable URL
               with&nbsp;Vercel.
             </p>
@@ -116,10 +116,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
+            <h2 className={styles.incard}>
+              Docs <span>&rarr;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={styles.incard}>
               Find in-depth information about Next.js features and&nbsp;API.
             </p>
           </Link>
@@ -130,10 +130,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
+            <h2 className={styles.incard}>
+              Learn <span>&rarr;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={styles.incard}>
               Learn about Next.js in an interactive course with&nbsp;quizzes!
             </p>
           </Link>
@@ -144,10 +144,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
+            <h2 className={styles.incard}>
+              Templates <span>&rarr;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={styles.incard}>
               Discover and deploy boilerplate example Next.js&nbsp;projects.
             </p>
           </Link>
@@ -158,10 +158,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
+            <h2 className={styles.incard}>
+              Deploy <span>&rarr;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={styles.incard}>
               Instantly deploy your Next.js site to a shareable URL
               with&nbsp;Vercel.
             </p>
@@ -174,10 +174,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
+            <h2 className={styles.incard}>
+              Docs <span>&rarr;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={styles.incard}>
               Find in-depth information about Next.js features and&nbsp;API.
             </p>
           </Link>
@@ -188,10 +188,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
+            <h2 className={styles.incard}>
+              Learn <span>&rarr;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={styles.incard}>
               Learn about Next.js in an interactive course with&nbsp;quizzes!
             </p>
           </Link>
@@ -202,10 +202,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
+            <h2 className={styles.incard}>
+              Templates <span>&rarr;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={styles.incard}>
               Discover and deploy boilerplate example Next.js&nbsp;projects.
             </p>
           </Link>
@@ -216,10 +216,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
+            <h2 className={styles.incard}>
+              Deploy <span>&rarr;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={styles.incard}>
               Instantly deploy your Next.js site to a shareable URL
               with&nbsp;Vercel.
             </p>
@@ -232,10 +232,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
+            <h2 className={styles.incard}>
+              Docs <span>&rarr;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={styles.incard}>
               Find in-depth information about Next.js features and&nbsp;API.
             </p>
           </Link>
@@ -246,10 +246,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
+            <h2 className={styles.incard}>
+              Learn <span>&rarr;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={styles.incard}>
               Learn about Next.js in an interactive course with&nbsp;quizzes!
             </p>
           </Link>
@@ -260,10 +260,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
+            <h2 className={styles.incard}>
+              Templates <span>&rarr;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={styles.incard}>
               Discover and deploy boilerplate example Next.js&nbsp;projects.
             </p>
           </Link>
@@ -274,10 +274,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
+            <h2 className={styles.incard}>
+              Deploy <span>&rarr;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={styles.incard}>
               Instantly deploy your Next.js site to a shareable URL
               with&nbsp;Vercel.
             </p>
