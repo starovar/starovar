@@ -37,10 +37,10 @@ export default function Example() {
   return (
     <header className="bg-white dark:bg-black text-white dark:text-black">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 border-b border-gray-900/10" aria-label="Global">
-        <div className="flex lg:flex-1 text-indigo-600 dark:text-indigo-300 text-2xl font-bold">
+        <div className="flex lg:flex-1 text-indigo-600 dark:text-indigo-300 text-2xl font-black">
           <Link href="/" className="-m-1.5 p-1.5 flex items-center">
             <svg
-            class="h-6 w-auto mr-2 logo"
+            className="h-6 w-auto mr-2 logo"
             viewBox="0 0 197 197"
             fill="#4f46e5"
             xmlns="http://www.w3.org/2000/svg">

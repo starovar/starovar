@@ -8,9 +8,9 @@ const About = () => {
           <title>About</title>
           <meta name="description" content="Learn more about our company" />
         </Head>
-        <h1>About Us</h1>
+        <h1 className='bg-white text-indigo-600'>About Us</h1>
         <p>We are a company that specializes in XYZ</p>
       </div>
     )
   }
-  export default About
+  export default About;

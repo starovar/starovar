@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { Facebook, Twitter } from 'react-feather'
 
 const Footer = () => {
   return (
@@ -59,7 +58,7 @@ const Footer = () => {
               <span className="sr-only">Instagram</span>
 
               <svg
-                class="w-6 h-6"
+                className="w-6 h-6"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -236,7 +235,7 @@ const Footer = () => {
       </div>
     </div>
 
-    <div className="pt-8 border-t sm:flex sm:items-center sm:justify-between">
+    <nav className="pt-8 border-t sm:flex sm:items-center sm:justify-between">
     <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end leading-6">
           <li>
             <Link href="/terms" className="text-gray-500 transition hover:opacity-75">
@@ -253,7 +252,7 @@ const Footer = () => {
       <p className="flex text-xs justify-center text-gray-500 dark:text-gray-400 leading-6">
       &copy; 2022. Kotec Labs. Всі права захищені.
     </p>
-    </div>
+    </nav>
   </div>
 </footer>
   )
