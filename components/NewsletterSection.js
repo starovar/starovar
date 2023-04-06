@@ -17,8 +17,8 @@ import Link from 'next/link'
 
 export default function Example() {
   return (
-    <div className="bg-white border rounded-3xl relative isolate overflow-hidden dark:bg-gray-900 py-16 sm:py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="bg-indigo-600/5 border rounded-3xl relative isolate overflow-hidden dark:bg-gray-900 py-16 sm:py-24 lg:py-32">
+      <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
           <div className="max-w-xl lg:max-w-lg">
             <h2 className="text-3xl text-gray-900 font-bold tracking-tight dark:text-white sm:text-4xl">Підпишіться на розсилку Kotec Labs.</h2>
@@ -35,7 +35,7 @@ export default function Example() {
                 type="email"
                 autoComplete="email"
                 required
-                className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-gray-600 dark:text-white shadow-sm ring-1 ring-inset ring-gray-900/10 dark:ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+                className="min-w-0 flex-auto rounded-md border-0 bg-white dark:bg-white/5 px-3.5 py-2 text-gray-600 dark:text-white shadow-sm ring-1 ring-inset ring-gray-900/20 dark:ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
                 placeholder="Введіть свій email"
               />
               <button
@@ -45,22 +45,25 @@ export default function Example() {
                 Підписатися
               </button>
             </div>
-            <div className="mt-4 text-xs leading-6 text-gray-600">
+            <div className="mt-4 inline-flex text-xs leading-6 text-gray-600">
             <label htmlFor="terms" className="flex pl-1.5">
-  <input
-    type="checkbox"
-    id="terms"
-    name="terms"
-    required
-    className="form-checkbox inline-flex cursor-pointer h-4 w-4 text-indigo-600 transition duration-150 ease-in-out"
-  />
-                    <p className="ml-2 text-xs text-gray-600 dark:text-white">
-  Я розумію, що мої особисті дані оброблятимуться 
-  <span className="inline-block ml-1">
-    відповідно до <Link href="/privacy" className="underline">Політики конфіденційності</Link> Kotec Labs.
-  </span>
-</p>
+             <input
+              type="checkbox"
+              id="terms"
+              name="terms"
+              required
+              className="form-checkbox inline-flex cursor-pointer h-4 w-4 text-indigo-600 transition duration-150 ease-in-out"
+              />
                  </label>
+                 <p className="ml-2 text-xs text-gray-600 dark:text-white">
+             Я розумію, що мої особисті дані оброблятимуться відповідно до 
+             <span className="inline-block">
+             <Link href="/privacy" className="ml-1 mr-1 underline">
+              Політики конфіденційності
+              </Link> 
+              </span>
+              Kotec Labs.
+              </p>
             </div>
           </div>
           <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">

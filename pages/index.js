@@ -5,7 +5,8 @@ import HeroSection from '@/components/HeroSection'
 import ServicesFeatures from '@/components/ServicesFeatures'
 import NewsletterSection from '@/components/NewsletterSection'
 import NextCards from '@/components/NextCards'
-import ServicesSection from '@/components/ServicesSection'
+import BenefitsSection from '@/components/BenefitsSection'
+import FooterExt from '@/components/FooterExt'
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -21,7 +22,7 @@ export default function Home() {
         <HeroSection />
         <ServicesFeatures />
         <NextCards />
-        <ServicesSection />
+        <BenefitsSection />
         <NewsletterSection />
       </main>
     </>
