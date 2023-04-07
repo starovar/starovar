@@ -1,6 +1,5 @@
 import { Fragment, useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
   ArrowPathIcon,
@@ -37,7 +36,7 @@ export default function Example() {
   return (
     <header className="bg-white dark:bg-black text-white dark:text-black">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 border-b border-gray-900/10" aria-label="Global">
-        <div className="flex lg:flex-1 text-indigo-600 dark:text-indigo-300 text-2xl font-black">
+        <div className="flex lg:flex-1 text-gray-600 dark:text-indigo-300 text-2xl font-black">
           <Link href="/" className="-m-1.5 p-1.5 flex items-center">
             <svg
             className="h-6 w-auto mr-2 logo"

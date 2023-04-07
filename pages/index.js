@@ -6,7 +6,11 @@ import ServicesFeatures from '@/components/ServicesFeatures'
 import NewsletterSection from '@/components/NewsletterSection'
 import NextCards from '@/components/NextCards'
 import BenefitsSection from '@/components/BenefitsSection'
-import FooterExt from '@/components/FooterExt'
+import TechnologiesSection from '@/components/TechnologiesSection'
+import FeaturesSection from '@/components/FeaturesSection'
+import FeaturesSection2 from '@/components/FeaturesSection2'
+import SimpleFeatures from '@/components/SimpleFeatures'
+import FeaturesCards from '@/components/FeaturesCards'
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -20,10 +24,15 @@ export default function Home() {
       </Head>
        <main className={styles.main}>
         <HeroSection />
+        <FeaturesSection />
+        <FeaturesSection2 />
         <ServicesFeatures />
+        <FeaturesCards />
         <NextCards />
+        <SimpleFeatures />
         <BenefitsSection />
         <NewsletterSection />
+        <TechnologiesSection />
       </main>
     </>
   )

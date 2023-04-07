@@ -26,19 +26,19 @@ function MobileMenu({ title, links }) {
           <>
             <Disclosure.Button
               onClick={() => setIsOpen(!isOpen)}
-              className={`flex justify-between w-full md:w-40 px-5 py-2.5 text-sm font-medium text-gray-900 bg-gray-100 rounded-md ${
-                open ? 'bg-gray-200' : ''
+              className={`flex justify-between transition w-full md:w-44 border px-5 py-2.5 text-sm font-medium bg-gray-100 text-gray-900 rounded-md ${
+                open ? 'text-gray-600 md:w-44 bg-gray-50' : ''
               }`}
             >
               <span>{title}</span>
               <ChevronUpIcon
                 className={`${
-                  open ? 'transform rotate-180' : ''
-                } w-5 h-5 text-gray-500`}
+                  open ? 'transform rotate-180 text-gray-500' : ''
+                } w-5 h-5 text-gray-600 ml-0.5`}
               />
             </Disclosure.Button>
             <Disclosure.Panel
-              className="px-4 pt-4 pb-2 text-sm text-gray-500"
+              className="px-4 pt-4 pb-2 text-sm text-gray-600"
             >
               <ul className="space-y-2">
                 {links.map((link) => (
@@ -100,10 +100,10 @@ function MobileMenu({ title, links }) {
   
     return (
         <footer className="bg-white dark:bg-black text-white dark:text-black border-t">
-        <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8 divide-y">
+        <div className="max-w-screen-xl px-4 py-8 md:pt-16 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8 divide-y">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
-              <div className="text-indigo-600 dark:text-indigo-300 text-2xl font-black">
+              <div className="text-gray-600 dark:text-indigo-300 text-2xl font-black">
               <Link href="/" className="-m-1.5 p-1.5 flex items-center">
                 <svg
                   className="h-6 mr-2"
@@ -215,26 +215,38 @@ function MobileMenu({ title, links }) {
               </ul>
             </div>
         <div className="w-11/12 sm:w-max mx-auto overflow-hidden">
-          <nav className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 md:flex lg:grid-cols-2 whitespace-nowrap">
+          <nav className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 md:flex lg:grid-cols-2 pb-8 whitespace-nowrap">
             <MobileMenu title="Послуги" links={servicesLinks} isOpen={isOpen} setIsOpen={setIsOpen} />
             <MobileMenu title="Компанія" links={companyLinks} isOpen={isOpen} setIsOpen={setIsOpen} />
             <MobileMenu title="Каталог" links={directoryLinks} isOpen={isOpen} setIsOpen={setIsOpen} />
-            <MobileMenu title="Правові умови" links={legalLinks} isOpen={isOpen} setIsOpen={setIsOpen} />
+            <MobileMenu title="Юридичний" links={legalLinks} isOpen={isOpen} setIsOpen={setIsOpen} />
           </nav>
         </div>
         </div>
 
-        <nav className="pt-8 border-t sm:flex sm:items-center sm:justify-between">
-    <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end leading-6">
+        <nav className="pt-8 border-t md:items-baseline sm:flex sm:items-center sm:justify-between">
+    <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end leading-6 pb-4">
           <li>
-            <Link href="/terms" className="text-gray-500 transition hover:opacity-75">
+            <Link href="/terms" className="text-gray-500 transition hover:text-gray-600">
               Правила та умови
             </Link>
           </li>
 
           <li>
-            <Link href="/privacy" className="text-gray-500 transition hover:opacity-75">
+            <Link href="/privacy" className="text-gray-500 transition hover:text-gray-600">
               Конфіденційність
+            </Link>
+        </li>
+
+        <li>
+            <Link href="/terms-of-service" className="text-gray-500 transition hover:text-gray-600">
+              Надання послуг
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/public-offer" className="text-gray-500 transition hover:text-gray-600">
+              Публічна оферта
             </Link>
         </li>
       </ul>
