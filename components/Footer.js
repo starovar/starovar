@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Disclosure } from '@headlessui/react';
+import { Disclosure, Transition } from '@headlessui/react';
 import { ChevronUpIcon } from '@heroicons/react/20/solid';
 import Link from 'next/link';
 import { useMediaQuery } from '@react-hook/media-query'
@@ -37,6 +37,15 @@ function MobileMenu({ title, links }) {
                 } w-5 h-5 text-gray-600 ml-0.5`}
               />
             </Disclosure.Button>
+            <Transition
+              show={open}
+        enter="transition duration-100 ease-out"
+        enterFrom="transform scale-95 opacity-0"
+        enterTo="transform scale-100 opacity-100"
+        leave="transition duration-75 ease-out"
+        leaveFrom="transform scale-100 opacity-100"
+        leaveTo="transform scale-95 opacity-0"
+      >
             <Disclosure.Panel
               className="px-4 pt-4 pb-2 text-sm text-gray-600"
             >
@@ -54,6 +63,7 @@ function MobileMenu({ title, links }) {
                 ))}
               </ul>
             </Disclosure.Panel>
+            </Transition>
           </>
         )}
       </Disclosure>

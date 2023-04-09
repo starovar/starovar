@@ -5,7 +5,6 @@ import HeroSection from '@/components/HeroSection'
 import ServicesFeatures from '@/components/ServicesFeatures'
 import NewsletterSection from '@/components/NewsletterSection'
 import NextCards from '@/components/NextCards'
-import BenefitsSection from '@/components/BenefitsSection'
 import TechnologiesSection from '@/components/TechnologiesSection'
 import FeaturesSection from '@/components/FeaturesSection'
 import FeaturesSection2 from '@/components/FeaturesSection2'
@@ -30,7 +29,6 @@ export default function Home() {
         <FeaturesCards />
         <NextCards />
         <SimpleFeatures />
-        <BenefitsSection />
         <NewsletterSection />
         <TechnologiesSection />
       </main>

@@ -12,6 +12,9 @@ module.exports = {
   theme: {
     extend: {
       translate: ['group-hover', 'hover'],
+      spacing: {
+        '76': '19.1rem',
+      },
     },
   },
   plugins: [
