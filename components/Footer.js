@@ -26,8 +26,8 @@ function MobileMenu({ title, links }) {
           <>
             <Disclosure.Button
               onClick={() => setIsOpen(!isOpen)}
-              className={`flex justify-between transition w-full md:w-44 border px-5 py-2.5 text-sm font-medium bg-gray-100 text-gray-900 rounded-md ${
-                open ? 'text-gray-600 md:w-44 bg-gray-50' : ''
+              className={`flex justify-between transition w-full md:w-44 border border-royalking-black px-5 py-2.5 text-sm font-medium bg-royal-black text-gray-500 rounded-md ${
+                open ? 'text-slate-400 md:w-44 bg-royalking-black border-royal-black' : ''
               }`}
             >
               <span>{title}</span>

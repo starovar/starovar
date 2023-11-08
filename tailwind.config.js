@@ -11,6 +11,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {'royal-black': '#050505', 'royalking-black': '#0A0A0A',},
       translate: ['group-hover', 'hover'],
       spacing: {
         '76': '19.1rem',
