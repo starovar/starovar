@@ -2,7 +2,7 @@ import React from "react";
 
 const FeaturesCards = () => {
     return (
-<div className="featuresCard grid grid-cols-1 gap-4 lg:grid-cols-4 bg-gray-200">
+<div className="featuresCard grid grid-cols-1 gap-4 lg:grid-cols-4">
         <div className="max-w-xs rounded-md shadow-md bg-gray-900 text-gray-100">
 	    <img src="https://source.unsplash.com/random/300x300/?2" alt="" className="object-cover object-center w-full rounded-t-md h-72 bg-gray-500" />
 	    <div className="flex flex-col justify-between p-6 space-y-8">

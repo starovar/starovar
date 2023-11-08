@@ -2,7 +2,7 @@ import React from "react"
 
 const FeaturesSection = () => {
     return (
-<section className="bg-gray-800 text-gray-100">
+<section className="border rounded-3xl text-gray-100">
 	<div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
 		<div>
 			<h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl text-gray-50">Aliquip definiebas ad est</h2>

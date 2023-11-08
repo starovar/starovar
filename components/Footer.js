@@ -32,10 +32,9 @@ function MobileMenu({ title, links }) {
             >
               <span>{title}</span>
               <ChevronUpIcon
-                className={`${
-                  open ? 'transform rotate-180 text-gray-500' : ''
-                } w-5 h-5 text-gray-600 ml-0.5`}
-              />
+                className={`${open ? '' : 'rotate-180 text-gray-500'} 
+                w-5 h-5 text-gray-600 ml-0.5 transition duration-150 ease-in-out`}
+                aria-hidden="true" />
             </Disclosure.Button>
             <Transition
               show={open}

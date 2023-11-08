@@ -10,6 +10,7 @@ import FeaturesSection from '@/components/FeaturesSection'
 import FeaturesSection2 from '@/components/FeaturesSection2'
 import SimpleFeatures from '@/components/SimpleFeatures'
 import FeaturesCards from '@/components/FeaturesCards'
+import FeaturesBlog from '@/components/FeaturesBlog'
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -31,6 +32,7 @@ export default function Home() {
         <SimpleFeatures />
         <NewsletterSection />
         <TechnologiesSection />
+        <FeaturesBlog />
       </main>
     </>
   )

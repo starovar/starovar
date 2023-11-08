@@ -3,10 +3,12 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import TimelineSection from '@/components/TImelineSection'
 import HerotextanimatedSection from '@/components/HerotextanimatedSection'
-import TimelineSection2 from '@/components/TimelineSection2'
-import TimelineSection3 from '@/components/TImelineSection3'
 import HeadlessuiTabs from '@/components/HeadlessuiTabs'
 import HeadlessuiAccordion from '@/components/HeadlessuiAccordion'
+import FaqAccordion from '@/components/FaqAccordion'
+import FeaturesCards from '@/components/FeaturesCards'
+import FeaturesSite from '@/components/FeaturesSite'
+import FeaturesBlog from '@/components/FeaturesBlog'
 
 const Components = () => {
     return (
@@ -20,10 +22,12 @@ const Components = () => {
 
         <TimelineSection />
         <HerotextanimatedSection />
-        <TimelineSection2 />
-        <TimelineSection3 />
+        <FeaturesSite />
+        <FeaturesBlog />
         <HeadlessuiTabs />
         <HeadlessuiAccordion />
+        <FaqAccordion />
+        <FeaturesCards />
 
       </main>
 
