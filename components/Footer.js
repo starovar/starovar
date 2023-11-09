@@ -26,14 +26,14 @@ function MobileMenu({ title, links }) {
           <>
             <Disclosure.Button
               onClick={() => setIsOpen(!isOpen)}
-              className={`flex justify-between transition w-full md:w-44 border border-royalking-black px-5 py-2.5 text-sm font-medium bg-royal-black text-gray-500 rounded-md ${
-                open ? 'text-slate-400 md:w-44 bg-royalking-black border-royal-black' : ''
+              className={`flex justify-between transition w-full md:w-44 border dark:border-royal-gray px-5 py-2.5 text-sm font-medium dark:bg-black text-gray-500 rounded-md ${
+                open ? 'text-slate-400 md:w-44 dark:border-black dark:bg-royal-black' : ''
               }`}
             >
               <span>{title}</span>
               <ChevronUpIcon
-                className={`${open ? '' : 'rotate-180 text-gray-500'} 
-                w-5 h-5 text-gray-600 ml-0.5 transition duration-150 ease-in-out`}
+                className={`${open ? '' : 'rotate-180'} 
+                w-5 h-5 text-royal-gray ml-0.5 transition duration-150 ease-in-out`}
                 aria-hidden="true" />
             </Disclosure.Button>
             <Transition
@@ -108,8 +108,8 @@ function MobileMenu({ title, links }) {
     }, [isMobile]);
   
     return (
-        <footer className="bg-white dark:bg-black text-white dark:text-black border-t">
-        <div className="max-w-screen-xl px-4 py-8 md:pt-16 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8 divide-y">
+        <footer className="bg-white dark:bg-black text-white dark:text-black border-t dark:border-royal-gray">
+        <div className="max-w-screen-xl px-4 py-8 md:pt-16 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8 divide-y dark:divide-royal-gray">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
               <div className="text-gray-600 dark:text-indigo-300 text-2xl font-black">
