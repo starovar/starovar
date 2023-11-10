@@ -26,7 +26,7 @@ function MobileMenu({ title, links }) {
           <>
             <Disclosure.Button
               onClick={() => setIsOpen(!isOpen)}
-              className={`flex justify-between transition w-full md:w-44 border dark:border-royal-gray px-5 py-2.5 text-sm font-medium dark:bg-black text-gray-500 rounded-md ${
+              className={`flex justify-between transition w-full md:w-44 border dark:border-royal-black px-5 py-2.5 text-sm font-medium dark:bg-black text-gray-500 rounded-md ${
                 open ? 'text-slate-400 md:w-44 dark:border-black dark:bg-royal-black' : ''
               }`}
             >
@@ -113,7 +113,7 @@ function MobileMenu({ title, links }) {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
               <div className="text-gray-600 dark:text-indigo-300 text-2xl font-black">
-              <Link href="/" className="-m-1.5 p-1.5 flex items-center">
+              <Link href="/" className="-m-1.5 p-1.5 flex items-center text-gray-500">
                 <svg
                   className="h-6 mr-2"
                   viewBox="0 0 197 197"
@@ -136,7 +136,7 @@ function MobileMenu({ title, links }) {
                     href="/"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-gray-600 transition hover:opacity-75 dark:text-gray-200"
+                    className="text-gray-600 transition hover:opacity-75 dark:text-gray-400"
                   >
                     <span className="sr-only">Facebook</span>
       
@@ -159,7 +159,7 @@ function MobileMenu({ title, links }) {
                     href="/"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-gray-600 transition hover:opacity-75 dark:text-gray-200"
+                    className="text-gray-600 transition hover:opacity-75 dark:text-gray-400"
                   >
                     <span className="sr-only">Instagram</span>
       
@@ -182,7 +182,7 @@ function MobileMenu({ title, links }) {
                     href="/"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-gray-600 transition hover:opacity-75 dark:text-gray-200"
+                    className="text-gray-600 transition hover:opacity-75 dark:text-gray-400"
                   >
                     <span className="sr-only">Twitter</span>
       
@@ -204,7 +204,7 @@ function MobileMenu({ title, links }) {
                     href="/"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-gray-600 transition hover:opacity-75 dark:text-gray-200"
+                    className="text-gray-600 transition hover:opacity-75 dark:text-gray-400"
                   >
                     <span className="sr-only">GitHub</span>
       
