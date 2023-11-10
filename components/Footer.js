@@ -27,7 +27,7 @@ function MobileMenu({ title, links }) {
             <Disclosure.Button
               onClick={() => setIsOpen(!isOpen)}
               className={`flex justify-between transition w-full md:w-44 border dark:border-royal-black px-5 py-2.5 text-sm font-semibold dark:bg-black text-royal-gray dark:text-royal-lightgray rounded-md ${
-                open ? 'text-royal-black md:w-44 dark:text-white dark:border-black dark:bg-royal-black' : ''
+                open ? 'text-royal-black md:w-44 dark:text-neutral-200 dark:border-black dark:bg-royal-black' : ''
               }`}
             >
               <span>{title}</span>
@@ -53,7 +53,7 @@ function MobileMenu({ title, links }) {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="hover:text-royal-black text-royal-gray dark:hover:text-white transition duration-200 dark:text-royal-lightgray"
+                      className="hover:text-royal-black text-royal-gray dark:hover:text-neutral-200 transition duration-200 dark:text-royal-lightgray"
                       onClick={() => setIsOpen(false)}
                     >
                       {link.title}
@@ -112,21 +112,21 @@ function MobileMenu({ title, links }) {
         <div className="max-w-screen-xl px-4 py-8 md:pt-16 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8 divide-y dark:divide-royal-gray">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
-              <div className="text-gray-600 dark:text-indigo-300 text-2xl font-black">
-              <Link href="/" className="-m-1.5 p-1.5 flex items-center text-gray-500">
+              <div className="text-gray-600 dark:text-indigo-300 text-xl font-black">
+              <Link href="/" className="p-1.5 flex items-center text-gray-500 dark:text-neutral-200">
                 <svg
-                  className="h-6 mr-2"
+                  className="h-5 mr-2"
                   viewBox="0 0 197 197"
-                  fill=""
+                  fill="#e5e5e5"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path d="M175.27,197H52.11a9,9,0,0,1-6.37-15.36l61.59-61.59a9,9,0,0,1,12.72,0l61.59,61.59A9,9,0,0,1,175.27,197Z" fill="#4f46e5"/>
-                  <path d="M181.64,15.36,15.36,181.64A9,9,0,0,1,0,175.27V121.69a9,9,0,0,1,2.64-6.37L115.32,2.64A9,9,0,0,1,121.69,0h53.58A9,9,0,0,1,181.64,15.36Z" fill="#4f46e5"/>
+                  <path d="M175.27,197H52.11a9,9,0,0,1-6.37-15.36l61.59-61.59a9,9,0,0,1,12.72,0l61.59,61.59A9,9,0,0,1,175.27,197Z" />
+                  <path d="M181.64,15.36,15.36,181.64A9,9,0,0,1,0,175.27V121.69a9,9,0,0,1,2.64-6.37L115.32,2.64A9,9,0,0,1,121.69,0h53.58A9,9,0,0,1,181.64,15.36Z" />
                 </svg>
                 Kotec Labs
                 </Link>
               </div>
       
-              <p className="max-w-xs mt-4 text-sm text-gray-500 dark:text-gray-400">
+              <p className="max-w-xs mt-4 text-sm text-gray-500 dark:text-royal-lightgray">
               Ми хочемо допомогти вам створити красиві, доступні, швидкі та безпечні веб-сайти, які працюють у різних браузерах і для всіх ваших користувачів.
               </p>
       
@@ -136,7 +136,7 @@ function MobileMenu({ title, links }) {
                     href="/"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-gray-600 transition hover:opacity-75 dark:text-gray-400"
+                    className="text-gray-600 transition hover:text-gray-500 dark:hover:text-neutral-200 dark:text-royal-lightgray"
                   >
                     <span className="sr-only">Facebook</span>
       
@@ -159,7 +159,7 @@ function MobileMenu({ title, links }) {
                     href="/"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-gray-600 transition hover:opacity-75 dark:text-gray-400"
+                    className="text-gray-600 transition hover:text-gray-500 dark:hover:text-neutral-200 dark:text-royal-lightgray"
                   >
                     <span className="sr-only">Instagram</span>
       
@@ -182,7 +182,7 @@ function MobileMenu({ title, links }) {
                     href="/"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-gray-600 transition hover:opacity-75 dark:text-gray-400"
+                    className="text-gray-600 transition hover:text-gray-500 dark:hover:text-neutral-200 dark:text-royal-lightgray"
                   >
                     <span className="sr-only">Twitter</span>
       
@@ -204,7 +204,7 @@ function MobileMenu({ title, links }) {
                     href="/"
                     rel="noreferrer"
                     target="_blank"
-                    className="text-gray-600 transition hover:opacity-75 dark:text-gray-400"
+                    className="text-gray-600 transition hover:text-gray-500 dark:hover:text-neutral-200 dark:text-royal-lightgray"
                   >
                     <span className="sr-only">GitHub</span>
       
@@ -236,31 +236,31 @@ function MobileMenu({ title, links }) {
         <nav className="pt-8 border-t md:items-baseline sm:flex sm:items-center sm:justify-between">
     <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end leading-6 pb-4">
           <li>
-            <Link href="/terms" className="text-gray-500 transition hover:text-gray-600">
+            <Link href="/terms" className="text-gray-500 dark:text-royal-lightgray transition hover:text-gray-600 dark:hover:text-neutral-200">
               Правила та умови
             </Link>
           </li>
 
           <li>
-            <Link href="/privacy" className="text-gray-500 transition hover:text-gray-600">
+            <Link href="/privacy" className="text-gray-500 dark:text-royal-lightgray transition hover:text-gray-600 dark:hover:text-neutral-200">
               Конфіденційність
             </Link>
         </li>
 
         <li>
-            <Link href="/terms-of-service" className="text-gray-500 transition hover:text-gray-600">
+            <Link href="/terms-of-service" className="text-gray-500 dark:text-royal-lightgray transition hover:text-gray-600 dark:hover:text-neutral-200">
               Надання послуг
             </Link>
           </li>
 
           <li>
-            <Link href="/public-offer" className="text-gray-500 transition hover:text-gray-600">
+            <Link href="/public-offer" className="text-gray-500 dark:text-royal-lightgray transition hover:text-gray-600 dark:hover:text-neutral-200">
               Публічна оферта
             </Link>
         </li>
       </ul>
-      <p className="flex text-xs justify-center text-gray-500 dark:text-gray-400 leading-6">
-      &copy; 2022. Kotec Labs. Всі права захищені.
+      <p className="flex text-xs justify-center text-gray-500 dark:text-royal-lightgray leading-6">
+      &copy; 2023 Kotec, Inc.
     </p>
     </nav>
 
