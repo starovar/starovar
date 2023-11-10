@@ -2,7 +2,7 @@ import React from "react"
 
 const TechnologiesSection = () => {
     return (
-<section className="bg-white text-gray-600 dark:bg-black border border-royal-gray rounded-3xl">
+<section className="bg-white text-gray-600 dark:bg-black border dark:border-royal-gray rounded-3xl">
 	<div className="max-w-screen-xl md:w-screen p-6 mx-auto space-y-6 text-center lg:p-16 lg:space-y-8">
 		<h2 className="text-3xl font-bold">Підтримка технологій</h2>
 		<div className="flex flex-wrap justify-center md:pt-8 lg:justify-between">

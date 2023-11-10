@@ -26,8 +26,8 @@ function MobileMenu({ title, links }) {
           <>
             <Disclosure.Button
               onClick={() => setIsOpen(!isOpen)}
-              className={`flex justify-between transition w-full md:w-44 border dark:border-royal-black px-5 py-2.5 text-sm font-medium dark:bg-black text-gray-500 rounded-md ${
-                open ? 'text-slate-400 md:w-44 dark:border-black dark:bg-royal-black' : ''
+              className={`flex justify-between transition w-full md:w-44 border dark:border-royal-black px-5 py-2.5 text-sm font-semibold dark:bg-black text-royal-gray dark:text-royal-lightgray rounded-md ${
+                open ? 'text-royal-black md:w-44 dark:text-white dark:border-black dark:bg-royal-black' : ''
               }`}
             >
               <span>{title}</span>
@@ -53,7 +53,7 @@ function MobileMenu({ title, links }) {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="hover:text-gray-900 dark:text-gray-200"
+                      className="hover:text-royal-black text-royal-gray dark:hover:text-white transition duration-200 dark:text-royal-lightgray"
                       onClick={() => setIsOpen(false)}
                     >
                       {link.title}

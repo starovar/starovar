@@ -32,9 +32,9 @@ export default function Home() {
         <NextCards />
         <SimpleFeatures />
         <NewsletterSection />
+        <GeometryDecoration />
         <TechnologiesSection />
         <FeaturesBlog />
-        <GeometryDecoration />
       </main>
     </>
   )
