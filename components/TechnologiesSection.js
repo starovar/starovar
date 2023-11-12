@@ -4,8 +4,7 @@ const TechnologiesSection = () => {
     return (
 <section className="bg-white text-gray-600 dark:bg-black border dark:border-royal-gray rounded-3xl">
 	<div className="max-w-screen-xl md:w-screen p-6 mx-auto space-y-6 text-center lg:p-16 lg:space-y-8">
-		<h2 className="text-3xl font-bold">Підтримка технологій</h2>
-		<div className="flex flex-wrap justify-center md:pt-8 lg:justify-between">
+		<div className="flex flex-wrap justify-center lg:justify-between">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="Angular" className="w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 text-gray-400 dark:text-royal-gray">
 				<title>Angular</title>
 				<path d="M13.24 16.859h5.51l-2.755-6.542zM15.995 0.010l-15.078 5.307 2.297 19.677 12.781 6.995 12.786-6.984 2.297-19.688-15.083-5.302zM25.406 24.406h-3.516l-1.896-4.667h-8l-1.896 4.667h-3.516l9.411-20.865z"></path>

@@ -7,7 +7,6 @@ import NewsletterSection from '@/components/NewsletterSection'
 import NextCards from '@/components/NextCards'
 import TechnologiesSection from '@/components/TechnologiesSection'
 import FeaturesSection from '@/components/FeaturesSection'
-import FeaturesSection2 from '@/components/FeaturesSection2'
 import SimpleFeatures from '@/components/SimpleFeatures'
 import FeaturesCards from '@/components/FeaturesCards'
 import FeaturesBlog from '@/components/FeaturesBlog'
@@ -26,7 +25,6 @@ export default function Home() {
        <main className={styles.main}>
         <HeroSection />
         <FeaturesSection />
-        <FeaturesSection2 />
         <ServicesFeatures />
         <FeaturesCards />
         <NextCards />

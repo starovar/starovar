@@ -11,6 +11,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        '240': '240px',
+      },
       colors: {'royal-black': '#111111', 'royal-gray': '#333333', 'royal-lightgray': '#888888', 'royal-darkgray': '#666666',},
       translate: ['group-hover', 'hover'],
       spacing: {
