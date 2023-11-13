@@ -5,14 +5,14 @@ import SubscribeForm from './SubscribeForm';
 function MobileMenu({ title, links }) {
   return (
     
-      <div className="pb-2 text-sm text-gray-600">
-      <h4>{title}</h4>
+      <div className="text-sm text-neutral-200">
+      <h4 className='mb-4 font-semibold'>{title}</h4>
         <ul>
           {links.map((link) => (
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="hover:text-royal-black text-royal-gray dark:hover:text-neutral-200 transition duration-200 dark:text-royal-lightgray"
+                className="block hover:text-royal-black text-royal-gray dark:hover:text-neutral-200 transition duration-200 dark:text-royal-lightgray mb-3"
               >
                 {link.title}
               </Link>
@@ -80,15 +80,15 @@ function MobileMenu({ title, links }) {
             <MobileMenu title="Юридичний" links={legalLinks} />
 
             <div className="footer_newsletter text-sm max-w-240">
-              <h4 className='dark:text-neutral-200'>Subscribe to our newsletter</h4>
-              <p className='dark:text-royal-lightgray'>Stay updated on new features, guides, and case.</p>
+              <h4 className='dark:text-neutral-200 mb-4 font-semibold'>Підпишіться на нашу розсилку</h4>
+              <p className='dark:text-royal-lightgray pr-16'>Будьте в курсі нових сучасних рішень.</p>
               <SubscribeForm />
                   </div>
 
         
       </nav>
-      <nav className="pt-8 border-t dark:border-royal-gray md:items-baseline sm:flex sm:items-center sm:justify-between">
-    <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end leading-6 pb-4">
+      <nav className="pt-9 mt-12 border-t dark:border-royal-gray md:items-baseline sm:flex sm:items-center sm:justify-between">
+    <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end leading-6">
           <li>
             <Link href="/terms" className="text-gray-500 dark:text-royal-lightgray transition hover:text-gray-600 dark:hover:text-neutral-200">
               Правила та умови
@@ -106,14 +106,8 @@ function MobileMenu({ title, links }) {
               Надання послуг
             </Link>
           </li>
-
-          <li>
-            <Link href="/public-offer" className="text-gray-500 dark:text-royal-lightgray transition hover:text-gray-600 dark:hover:text-neutral-200">
-              Публічна оферта
-            </Link>
-        </li>
       </ul>
-      <p className="flex text-xs justify-center text-gray-500 dark:text-royal-lightgray leading-6">
+      <p className="flex text-xs justify-center text-gray-500 dark:text-royal-lightgray leading-6 md:py-0 lg:py-0 py-4">
       &copy; 2023 Kotec, Inc.
     </p>
     </nav>
