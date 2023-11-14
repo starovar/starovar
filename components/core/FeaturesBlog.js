@@ -89,8 +89,8 @@ const posts = [
           </div>
           <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t dark:border-royal-gray pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             {posts.map((post) => (
-              <article key={post.id} className="flex max-w-xl flex-col items-start justify-between">
-                <Image src={post.img} alt="" width={384} height={256} className="" />
+              <article key={post.id} className="transition-all duration-150 lg:p-4 rounded-2xl lg:dark:hover:bg-black flex max-w-xl flex-col items-start justify-between">
+                <Image src={post.img} alt="" width={384} height={256} className="rounded-2xl" />
                 <div className="flex flex-wrap items-center gap-2 text-xs mt-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#888888" className="" viewBox="0 0 16 16"> <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"/> <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"/> </svg>
                 <time dateTime={post.datetime} className="text-gray-500 dark:text-royal-lightgray">

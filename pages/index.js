@@ -5,12 +5,12 @@ import HeroSection from '@/components/HeroSection'
 import ServicesFeatures from '@/components/ServicesFeatures'
 import NewsletterSection from '@/components/NewsletterSection'
 import NextCards from '@/components/NextCards'
-import TechnologiesSection from '@/components/TechnologiesSection'
+import TechnologiesSection from '@/components/core/TechnologiesSection'
 import FeaturesSection from '@/components/FeaturesSection'
 import SimpleFeatures from '@/components/SimpleFeatures'
 import FeaturesCards from '@/components/FeaturesCards'
-import FeaturesBlog from '@/components/FeaturesBlog'
-import GeometryDecoration from '@/components/GeometryDecoration'
+import FeaturesBlog from '@/components/core/FeaturesBlog'
+import GeometryDecoration from '@/components/core/GeometryDecoration'
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -31,8 +31,9 @@ export default function Home() {
         <SimpleFeatures />
         <NewsletterSection />
         <GeometryDecoration />
-        <TechnologiesSection />
+        
         <FeaturesBlog />
+        <TechnologiesSection />
       </main>
     </>
   )

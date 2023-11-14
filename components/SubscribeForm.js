@@ -16,7 +16,7 @@ const SubscribeForm = () => {
     <form className='relative h-8 mt-3' onSubmit={handleSubmit}>
       <label>
         <input
-          className='dark:bg-royal-black dark:border-black dark:text-neutral-200 rounded-md pr-20 text-xs h-full'
+          className='dark:bg-royal-black placeholder:text-royal-lightgray dark:border-black dark:text-neutral-200 rounded-md pr-20 text-xs h-full'
           placeholder='you@domain.com'
           type="email"
           value={email}
