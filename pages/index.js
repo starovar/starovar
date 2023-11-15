@@ -3,14 +3,13 @@ import styles from '@/styles/Home.module.css'
 import { useTheme } from 'next-themes'
 import HeroSection from '@/components/HeroSection'
 import ServicesFeatures from '@/components/ServicesFeatures'
-import NewsletterSection from '@/components/NewsletterSection'
 import NextCards from '@/components/NextCards'
 import TechnologiesSection from '@/components/core/TechnologiesSection'
 import FeaturesSection from '@/components/FeaturesSection'
 import SimpleFeatures from '@/components/SimpleFeatures'
-import FeaturesCards from '@/components/FeaturesCards'
 import FeaturesBlog from '@/components/core/FeaturesBlog'
 import GeometryDecoration from '@/components/core/GeometryDecoration'
+import FaqAccordionExt from '@/components/core/FaqAccordionExt'
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -26,12 +25,10 @@ export default function Home() {
         <HeroSection />
         <FeaturesSection />
         <ServicesFeatures />
-        <FeaturesCards />
         <NextCards />
         <SimpleFeatures />
-        <NewsletterSection />
+        <FaqAccordionExt />
         <GeometryDecoration />
-        
         <FeaturesBlog />
         <TechnologiesSection />
       </main>

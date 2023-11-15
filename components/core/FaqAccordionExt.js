@@ -7,7 +7,19 @@ const faqData = [
     answer: "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
   },
   {
-    question: 'Do you offer technical support?',
+    question: 'Do you offer technical support? Do you offer',
+    answer: 'No.',
+  },
+  {
+    question: 'Do you offer technical support? Do you offer',
+    answer: 'No.',
+  },
+  {
+    question: 'Do you offer technical support? Do you offer',
+    answer: 'No.',
+  },
+  {
+    question: 'Do you offer technical support? Do you offer',
     answer: 'No.',
   },
   // Добавьте другие вопросы и ответы по аналогии
@@ -15,18 +27,24 @@ const faqData = [
 
 export default function FaqAccordion() {
   return (
-    <div className="w-full px-4 pt-16">
-      <div className="mx-auto w-full max-w-md rounded-2xl bg-gray-100 p-2">
+    <div className="w-full lg:px-4 pt-16">
+      <h4 className='text-3xl font-bold text-center tracking-tight text-gray-900 sm:text-4xl dark:text-neutral-200/90'>
+        Часті запитання
+        </h4>
+      <div className="mx-auto lg:w-full lg:max-w-3xl rounded-2xl lg:dark:border bg-gray-100 dark:bg-royal-black dark:border-royal-gray mt-10 px-2 pb-2">
         {faqData.map((item, index) => (
           <Disclosure key={index}>
             {({ open }) => (
               <>
-                <Disclosure.Button className="flex w-full justify-between rounded-lg bg-purple-100 px-4 py-2 text-left text-sm font-medium text-purple-900 hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                <Disclosure.Button className={`inline-flex w-full justify-between rounded-lg bg-purple-100 dark:bg-black px-4 mt-2 py-2 text-left text-sm font-medium border dark:border-transparent text-purple-900 dark:text-royal-lightgray dark:hover:text-blue-500 dark:hover:bg-black/50 ${
+                open ? 'text-royal-black dark:text-blue-500/75 dark:bg-black' : ''
+              }`}
+              >
                   <span>{item.question}</span>
                   <ChevronUpIcon
                     className={`${
-                      open ? 'rotate-180 transform' : ''
-                    } h-5 w-5 text-purple-500 transition duration-150 ease-in-out`}
+                      open ? 'rotate-180 transform dark:text-royal-gray' : ''
+                    } h-5 w-5 text-purple-500 dark:text-royal-lightgray transition duration-150 ease-in-out`}
                   />
                 </Disclosure.Button>
                 <Transition
@@ -38,7 +56,7 @@ export default function FaqAccordion() {
                   leaveFrom="transform scale-100 opacity-100"
                   leaveTo="transform scale-95 opacity-0"
                 >
-                  <Disclosure.Panel static className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                  <Disclosure.Panel static className="px-4 pt-4 pb-2 text-sm text-gray-500 dark:text-neutral-200/90">
                     {item.answer}
                   </Disclosure.Panel>
                 </Transition>

@@ -17,7 +17,7 @@ const SubscribeForm = () => {
       <label>
         <input
           className='dark:bg-royal-black placeholder:text-royal-lightgray dark:border-black dark:text-neutral-200 rounded-md pr-20 text-xs h-full'
-          placeholder='you@domain.com'
+          placeholder='Введіть свій email'
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}

@@ -87,7 +87,7 @@ function MobileMenu({ title, links }) {
 
         
       </nav>
-      <nav className="pt-9 mt-12 border-t dark:border-royal-gray md:items-baseline sm:flex sm:items-center sm:justify-between">
+      <nav className="pt-9 mt-12 text-center border-t dark:border-royal-gray md:items-baseline sm:flex sm:items-center sm:justify-between">
     <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end leading-6">
           <li>
             <Link href="/terms" className="text-gray-500 dark:text-royal-lightgray transition hover:text-gray-600 dark:hover:text-neutral-200">
