@@ -5,7 +5,7 @@ const GeometryDecoration = () => {
     const isDarkTheme = true;
     return (
 
-<div>
+<div className="hidden lg:block">
     <svg fill="none" height="110" viewBox="0 0 800 110" width="100%" data-divider="true" role="separator">
     <path d="M0 30H800" opacity="0.15" className="stroke-[url(#paint0_linear_52_11950)] dark:stroke-white" strokeDasharray="2 2"></path>
     <path d="M0 78H800" opacity="0.15" className="stroke-[url(#paint1_linear_52_11950)] dark:stroke-white" strokeDasharray="2 2"></path>

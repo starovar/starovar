@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import SubscribeForm from './SubscribeForm';
+import SubscribeForm from './core/SubscribeForm';
 
 
 function MobileMenu({ title, links }) {

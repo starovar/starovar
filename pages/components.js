@@ -5,7 +5,6 @@ import TimelineSection from '@/components/TImelineSection'
 import HerotextanimatedSection from '@/components/HerotextanimatedSection'
 import HeadlessuiTabs from '@/components/HeadlessuiTabs'
 import HeadlessuiAccordion from '@/components/HeadlessuiAccordion'
-import FaqAccordion from '@/components/FaqAccordion'
 import FeaturesCards from '@/components/reserved/FeaturesCards'
 import FeaturesSite from '@/components/FeaturesSite'
 import FeaturesBlog from '@/components/core/FeaturesBlog'
@@ -26,7 +25,6 @@ const Components = () => {
         <FeaturesBlog />
         <HeadlessuiTabs />
         <HeadlessuiAccordion />
-        <FaqAccordion />
         <FeaturesCards />
 
       </main>

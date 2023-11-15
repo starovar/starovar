@@ -29,6 +29,7 @@ export default function Home() {
         <SimpleFeatures />
         <FaqAccordionExt />
         <GeometryDecoration />
+        <NextCards />
         <FeaturesBlog />
         <TechnologiesSection />
       </main>
