@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import SubscribeForm from './core/SubscribeForm';
+import SubscribeForm from './SubscribeForm';
 
 
 function MobileMenu({ title, links, customClass }) {
@@ -12,7 +12,7 @@ function MobileMenu({ title, links, customClass }) {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="block hover:text-royal-black text-royal-gray dark:hover:text-neutral-200 transition duration-200 dark:text-royal-lightgray mb-3"
+                className="block hover:text-royal-black text-royal-gray dark:hover:text-neutral-200 transition duration-100 dark:text-royal-lightgray mb-3"
               >
                 {link.title}
               </Link>
@@ -100,12 +100,6 @@ function MobileMenu({ title, links, customClass }) {
               Конфіденційність
             </Link>
         </li>
-
-        <li>
-            <Link href="/terms-of-service" className="text-gray-500 dark:text-royal-lightgray transition hover:text-gray-600 dark:hover:text-neutral-200">
-              Надання послуг
-            </Link>
-          </li>
       </ul>
       <p className="flex text-xs justify-center text-gray-500 dark:text-royal-lightgray leading-6 md:py-0 lg:py-0 py-4">
       &copy; 2023 Kotec, Inc.
