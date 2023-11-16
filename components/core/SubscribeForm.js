@@ -16,7 +16,7 @@ const SubscribeForm = () => {
     <form className='relative h-8 mt-3' onSubmit={handleSubmit}>
       <label>
         <input
-          className='dark:bg-royal-black placeholder:text-royal-lightgray dark:border-black dark:text-neutral-200 rounded-md pr-20 text-xs h-full'
+          className='dark:bg-royal-black w-full placeholder:text-royal-lightgray py-2 dark:border-black dark:text-neutral-200 rounded-md pr-20 text-sm'
           placeholder='Введіть свій email'
           type="email"
           value={email}
@@ -24,7 +24,7 @@ const SubscribeForm = () => {
           required
         />
       </label>
-      <button className='absolute text-xs dark:text-royal-lightgray border top-[15%] right-1 dark:border-royal-gray z-10 transition duration-200 py-0.5 px-1.5 rounded-sm dark:bg-black dark:hover:text-neutral-200 tracking-wider' type="submit">
+      <button className='absolute text-xs dark:text-royal-lightgray border top-[17%] right-1 dark:border-royal-gray z-10 transition duration-100 py-1 px-2 rounded-md dark:bg-black dark:hover:text-neutral-200 tracking-wider' type="submit">
         Підписатися
         </button>
     </form>

@@ -2,10 +2,10 @@ import Link from 'next/link';
 import SubscribeForm from './core/SubscribeForm';
 
 
-function MobileMenu({ title, links }) {
+function MobileMenu({ title, links, customClass }) {
   return (
     
-      <div className="text-sm text-neutral-200">
+      <div className={`text-sm text-neutral-200 ${customClass}`}>
       <h4 className='mb-4 font-semibold'>{title}</h4>
         <ul>
           {links.map((link) => (
@@ -56,9 +56,9 @@ function MobileMenu({ title, links }) {
   
     return (
         <footer className="bg-white dark:bg-black text-white dark:text-black border-t dark:border-royal-gray">
-        <div className="max-w-screen-xl px-4 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8 divide-y dark:divide-royal-gray">
-          <div className="md:pt-9 md:pb-9">
-            <nav className='Kotec flex flex-wrap justify-between'>
+        <div className="max-w-screen-xl px-6 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8 divide-y dark:divide-royal-gray">
+          <div className="pt-12 pb-5 md:pt-9 md:pb-9">
+            <nav className='Kotec grid gap-8 grid-cols-2 lg:flex lg:flex-wrap justify-between'>
               <div className="text-xl font-black">
               <Link href="/" className="flex items-center text-gray-500 dark:text-neutral-200">
                 <svg
@@ -69,17 +69,17 @@ function MobileMenu({ title, links }) {
                   <path d="M175.27,197H52.11a9,9,0,0,1-6.37-15.36l61.59-61.59a9,9,0,0,1,12.72,0l61.59,61.59A9,9,0,0,1,175.27,197Z" />
                   <path d="M181.64,15.36,15.36,181.64A9,9,0,0,1,0,175.27V121.69a9,9,0,0,1,2.64-6.37L115.32,2.64A9,9,0,0,1,121.69,0h53.58A9,9,0,0,1,181.64,15.36Z" />
                 </svg>
-                Kotec Labs
+                Kotec
                 </Link>
               </div>
               
           
-            <MobileMenu title="Послуги" links={servicesLinks} />
+            <MobileMenu title="Послуги" links={servicesLinks} customClass='col-start-1' />
             <MobileMenu title="Компанія" links={companyLinks} />
             <MobileMenu title="Каталог" links={directoryLinks} />
             <MobileMenu title="Юридичний" links={legalLinks} />
 
-            <div className="footer_newsletter text-sm max-w-240">
+            <div className="footer_newsletter text-sm lg:max-w-240 col-span-full">
               <h4 className='dark:text-neutral-200 mb-4 font-semibold'>Підпишіться на нашу розсилку</h4>
               <p className='dark:text-royal-lightgray pr-16'>Будьте в курсі нових сучасних рішень.</p>
               <SubscribeForm />
