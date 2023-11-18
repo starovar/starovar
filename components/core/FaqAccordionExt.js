@@ -25,7 +25,7 @@ const faqData = [
   // Добавьте другие вопросы и ответы по аналогии
 ];
 
-export default function FaqAccordion() {
+export default function FaqAccordionExt() {
   return (
     <div className="w-full lg:px-4 pt-16">
       <h4 className='text-3xl font-bold text-center tracking-tight text-gray-900 sm:text-4xl dark:text-neutral-200/90'>
@@ -36,15 +36,15 @@ export default function FaqAccordion() {
           <Disclosure key={index}>
             {({ open }) => (
               <>
-                <Disclosure.Button className={`inline-flex w-full justify-between rounded-lg bg-purple-100 dark:bg-black px-4 mt-2 py-2 text-left text-sm font-medium border dark:border-transparent text-purple-900 dark:text-royal-lightgray dark:hover:text-blue-500 dark:hover:bg-black/50 ${
-                open ? 'text-royal-black dark:text-blue-500/75 dark:bg-black' : ''
+                <Disclosure.Button className={`inline-flex w-full justify-between rounded-lg transition duration-100 ease-in-out bg-purple-100 dark:bg-black px-4 mt-2 py-2 text-left text-sm font-semibold border dark:border-transparent text-purple-900 dark:text-royal-lightgray dark:hover:text-blue-500 dark:hover:bg-black/50 ${
+                open ? 'text-royal-black dark:text-indigo-600 dark:bg-black' : 'dark:text-blue-600/50'
               }`}
               >
                   <span>{item.question}</span>
                   <ChevronUpIcon
                     className={`${
                       open ? 'rotate-180 transform dark:text-royal-gray' : ''
-                    } h-5 w-5 text-purple-500 dark:text-royal-lightgray transition duration-150 ease-in-out`}
+                    } h-5 w-5 text-purple-500 dark:text-royal-lightgray transition duration-100 ease-in-out`}
                   />
                 </Disclosure.Button>
                 <Transition

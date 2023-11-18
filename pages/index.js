@@ -1,18 +1,20 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import { useTheme } from 'next-themes'
+import React from 'react';
 import HeroSection from '@/components/HeroSection'
-import ServicesFeatures from '@/components/ServicesFeatures'
 import NextCards from '@/components/NextCards'
 import TechnologiesSection from '@/components/core/TechnologiesSection'
 import FeaturesSection from '@/components/FeaturesSection'
-import SimpleFeatures from '@/components/SimpleFeatures'
 import FeaturesBlog from '@/components/core/FeaturesBlog'
 import GeometryDecoration from '@/components/core/GeometryDecoration'
 import FaqAccordionExt from '@/components/core/FaqAccordionExt'
+import WebsiteSection from '@/components/showcasecards/WebsiteSection';
+
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
+
   return (
     <>
       <Head>
@@ -24,9 +26,9 @@ export default function Home() {
        <main className={styles.main}>
         <HeroSection />
         <FeaturesSection />
-        <ServicesFeatures />
         <NextCards />
-        <SimpleFeatures />
+        
+        <WebsiteSection />
         <FaqAccordionExt />
         <GeometryDecoration />
         <NextCards />
