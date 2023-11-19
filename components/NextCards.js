@@ -8,7 +8,7 @@ const generateCard = (title, content) => (
     target="_blank"
     rel="noopener noreferrer"
   >
-    <div className="border dark:border-royal-gray p-4 rounded-2xl hover:bg-neutral-200/5">
+    <div className="border-4 dark:border-royal-gray p-4 rounded-2xl hover:bg-neutral-200/5">
       {/* Инлайн-стили для карточки */}
       <h2 className="text-xl font-bold dark:text-neutral-200/90 mb-2">
         {title} <span>&rarr;</span>

@@ -36,10 +36,9 @@ export default function FaqAccordionExt() {
           <Disclosure key={index}>
             {({ open }) => (
               <>
-                <Disclosure.Button className={`inline-flex w-full justify-between rounded-lg transition duration-100 ease-in-out bg-purple-100 dark:bg-black px-4 mt-2 py-2 text-left text-sm font-semibold border dark:border-transparent text-purple-900 dark:text-royal-lightgray dark:hover:text-blue-500 dark:hover:bg-black/50 ${
-                open ? 'text-royal-black dark:text-indigo-600 dark:bg-black' : 'dark:text-blue-600/50'
-              }`}
-              >
+                <Disclosure.Button 
+                className={`${open ? 'dark:text-blue-900' : ''} inline-flex w-full justify-between rounded-lg transition duration-100 ease-in-out bg-purple-100 dark:bg-black px-4 mt-2 py-2 text-left text-sm font-semibold border dark:border-transparent text-purple-900 dark:text-royal-lightgray dark:hover:text-blue-500 dark:hover:bg-black/50`}
+                >
                   <span>{item.question}</span>
                   <ChevronUpIcon
                     className={`${
