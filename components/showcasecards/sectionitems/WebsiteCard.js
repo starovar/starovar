@@ -1,5 +1,5 @@
 // components/WebsiteCard.js
-import React from 'react';
+import React, { lazy } from 'react';
 import Image from 'next/image';
 
 const WebsiteCard = ({ website }) => (
@@ -11,7 +11,7 @@ const WebsiteCard = ({ website }) => (
         alt={website.name} 
         height={225}
         width={300}
-        priority={false}
+        priority={website.priority}
          />
       </div>
     )}
