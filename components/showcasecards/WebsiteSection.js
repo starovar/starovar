@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import WebsiteCards from './sectionitems/WebsiteCards';
 
 const websitesData = [
@@ -14,41 +13,27 @@ const websitesData = [
 const categories = ['All', 'Ecommerce', 'Blogging', 'Portfolio'];
 
 const WebsiteSection = () => {
-  const [underlineWidth, setUnderlineWidth] = useState(0);
-  const [underlineX, setUnderlineX] = useState(0);
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  const handleCategoryClick = (category, event) => {
-    setUnderlineWidth(event.target.offsetWidth);
-    setUnderlineX(event.target.offsetLeft);
+  const handleCategoryClick = (category) => {
     setSelectedCategory(category);
   };
 
   return (
     <div className='pt-6 lg:pt-16'>
-      <h4 className='dark:text-neutral-200/90 tracking-tight text-center underline text-3xl font-semibold'>Портфоліо</h4>
+      <h4 className='dark:text-neutral-200/90 tracking-tight text-center text-3xl font-semibold'>Портфоліо</h4>
 
       <div className="text-white">
         <nav>
-          <ul className='flex justify-center gap-4 text-sm mb-4 mt-10 relative'>
+          <ul className='flex justify-center dark:bg-royal-black rounded-full py-2 shadow-sm gap-4 font-semibold lg:text-lg text-sm mb-4 mt-10'>
             {categories.map((item) => (
-              <motion.li
+              <li
                 key={item}
-                className={`cursor-pointer py-2 px-3 border dark:border-royal-gray rounded-lg ${item === selectedCategory ? 'text-red-500' : ''}`}
-                onClick={(e) => handleCategoryClick(item, e)}
+                className={`cursor-pointer dark:hover:bg-neutral-200/5 py-2 px-3 rounded-full ${item === selectedCategory ? 'dark:text-blue-500 dark:bg-neutral-200/5' : ''}`}
+                onClick={() => handleCategoryClick(item)}
               >
                 {item}
-                {item === selectedCategory && (
-                  <motion.div
-                    className="absolute bottom-0 left-0 h-1.5 bg-red-500"
-                    style={{ width: `${underlineWidth}px`, x: `${underlineX}px` }}
-                    transition={{ duration: 0.3, ease: 'easeInOut' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                  />
-                )}
-              </motion.li>
+              </li>
             ))}
           </ul>
         </nav>
