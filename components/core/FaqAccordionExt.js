@@ -27,11 +27,11 @@ const faqData = [
 
 export default function FaqAccordionExt() {
   return (
-    <div className="w-full lg:px-4 pt-16">
+    <div className="w-full lg:px-4 pt-8">
       <h4 className='text-3xl font-bold text-center tracking-tight text-gray-900 sm:text-4xl dark:text-neutral-200/90'>
         Часті запитання
         </h4>
-      <div className="mx-auto lg:w-full lg:max-w-3xl rounded-2xl lg:dark:border bg-gray-100 dark:bg-black dark:border-royal-gray mt-10 px-2 pb-2">
+      <div className="mx-auto lg:w-full lg:max-w-3xl rounded-2xl lg:dark:border bg-gray-100 dark:bg-black dark:border-royal-gray mt-10 lg:px-2 pb-2">
         {faqData.map((item, index) => (
           <Disclosure key={index}>
             {({ open }) => (
@@ -39,8 +39,8 @@ export default function FaqAccordionExt() {
                 <Disclosure.Button 
                 className={`${
                   open
-                    ? 'dark:text-neutral-200/80 dark:hover:text-neutral-200/90 bg-purple-200 dark:bg-neutral-200/30 dark:hover:bg-neutral-200/40'
-                    : 'text-purple-900 dark:text-neutral-200/60 dark:hover:text-neutral-200/80 dark:bg-neutral-200/10 dark:hover:bg-neutral-200/20'
+                    ? 'dark:text-neutral-200/80 dark:hover:text-neutral-200/90 bg-purple-200 dark:bg-neutral-200/10 dark:hover:bg-neutral-200/20'
+                    : 'text-purple-900 dark:text-neutral-200/60 dark:hover:text-neutral-200/80 dark:bg-royal-black dark:hover:bg-neutral-200/10'
                 } inline-flex w-full justify-between rounded-lg transition duration-100 ease-in-out px-4 mt-2 py-2 text-left text-sm font-semibold border dark:border-transparent`}
               >
                   <span>{item.question}</span>

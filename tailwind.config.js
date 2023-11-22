@@ -12,7 +12,7 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        'steel': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+        'steel': '0 1px 1px 0px rgba(255, 255, 255, .2)',
       },
       maxWidth: {
         '240': '240px',
