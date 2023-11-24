@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import { useTheme } from 'next-themes'
 import React from 'react';
-import HeroSection from '@/components/HeroSection'
+import HeroSectionExt from '@/components/HeroSectionExt'
 import NextCards from '@/components/NextCards'
 import TechnologiesSection from '@/components/core/TechnologiesSection'
 import FeaturesSection from '@/components/FeaturesSection'
@@ -24,7 +24,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
        <main className={styles.main}>
-        <HeroSection />
+        <HeroSectionExt />
         <FeaturesSection />
         <NextCards />
         

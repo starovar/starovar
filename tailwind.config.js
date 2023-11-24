@@ -31,6 +31,7 @@ module.exports = {
         'color-react': '#61dafb',
         'color-svelte': '#FF3E00',
         'color-vue': '#41b883',
+        'color-tailwind': '#38bdf8',
       },
       translate: ['group-hover', 'hover'],
       spacing: {

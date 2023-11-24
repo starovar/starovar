@@ -39,7 +39,7 @@ export default function FaqAccordionExt() {
                 <Disclosure.Button 
                 className={`${
                   open
-                    ? 'dark:text-neutral-200/80 dark:hover:text-neutral-200/90 bg-purple-200 dark:bg-neutral-200/10 dark:hover:bg-neutral-200/20'
+                    ? 'dark:text-neutral-200/80 dark:hover:text-neutral-200/90 bg-purple-200 dark:bg-neutral-200/20 dark:hover:bg-neutral-200/30'
                     : 'text-purple-900 dark:text-neutral-200/60 dark:hover:text-neutral-200/80 dark:bg-royal-black dark:hover:bg-neutral-200/10'
                 } inline-flex w-full justify-between rounded-lg transition duration-100 ease-in-out px-4 mt-2 py-2 text-left text-sm font-semibold border dark:border-transparent`}
               >

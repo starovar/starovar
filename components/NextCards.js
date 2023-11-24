@@ -20,7 +20,7 @@ const generateCard = (title, content) => (
 
 export default function Example() {
   return (
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-2 gap-4 lg:pb-8">
       {generateCard('Docs', 'Find in-depth information about Next.js features and API.')}
       {generateCard('Learn', 'Learn about Next.js in an interactive course with quizzes!')}
       {generateCard('Templates', 'Discover and deploy boilerplate example Next.js projects.')}

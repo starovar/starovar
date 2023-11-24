@@ -79,7 +79,7 @@ const posts = [
   
   export default function Example() {
     return (
-      <div className="dark:bg-royal-black border dark:border-royal-gray rounded-3xl container max-w-xl lg:max-w-7xl py-24 sm:pt-16 sm:pb-8">
+      <div className="dark:bg-royal-black border dark:border-royal-gray rounded-3xl container max-w-xl lg:max-w-7xl lg:py-16 py-10 sm:pt-16 sm:pb-8">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto text-center lg:mx-0">
             <h2 className="text-3xl font-bold text-center tracking-tight text-gray-900 sm:text-4xl dark:text-neutral-200">Читайте наш блог</h2>
