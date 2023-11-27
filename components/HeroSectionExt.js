@@ -8,7 +8,7 @@ const HeroSection = () => {
         <svg fill="none" height="110" viewBox="0 0 800 110" width="100%" data-divider="true" role="separator">
     <path d="M0 30H800" opacity="0.15" className="dark:stroke-white" strokeDasharray="2 2"></path>
     <path d="M0 78H800" opacity="0.15" className=" dark:stroke-white" strokeDasharray="2 2"></path>
-    <path d="M76 106L76 26" opacity="0.15" className=" dark:stroke-white" strokeDasharray="2 2"></path>
+    <path d="M76 106L76 4" opacity="0.15" className="dark:stroke-white" strokeDasharray="2 2"></path>
     <path d="M88 30C88 27.6266 87.2962 25.3065 85.9776 23.3332C84.6591 21.3598 82.7849 19.8217 80.5922 18.9134C78.3995 18.0052 75.9867 17.7676 73.6589 18.2306C71.3311 18.6936 69.1929 19.8365 67.5147 21.5147C65.8365 23.1929 64.6936 25.3311 64.2306 27.6589C63.7676 29.9867 64.0052 32.3995 64.9134 34.5922C65.8217 36.7849 67.3598 38.6591 69.3332 39.9776C71.3065 41.2962 73.6266 42 76 42" opacity="0.15" className="stroke-[url(#paint3_linear_52_11950)] dark:stroke-white" strokeDasharray="2 2"></path>
     <path d="M400 106L400 4" opacity="0.15" className=" dark:stroke-white" strokeDasharray="2 2"></path>
     <path d="M724 110L724 -3.27826e-07" opacity="0.15" className=" dark:stroke-white" strokeDasharray="2 2"></path>
