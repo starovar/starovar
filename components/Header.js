@@ -54,19 +54,19 @@ export default function Example() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <header className="bg-white dark:bg-black text-white dark:text-black">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 border-b border-gray-900/10" aria-label="Global">
-        <div className="flex lg:flex-1 text-gray-600 dark:text-indigo-300 text-2xl font-black">
+    <header className="bg-white border-b dark:border-royal-gray dark:bg-black text-white dark:text-black">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-3 py-2 lg:px-8 border-b border-gray-900/10" aria-label="Global">
+        <div className="flex lg:flex-1 text-gray-600 dark:text-neutral-200 text-lg font-black">
           <Link href="/" className="-m-1.5 p-1.5 flex items-center">
             <svg
-            className="h-6 w-auto mr-2 logo"
+            className="h-5 w-auto mr-2 logo dark:text-neutral-200"
             viewBox="0 0 197 197"
-            fill="#4f46e5"
+            fill="currentColor"
             xmlns="http://www.w3.org/2000/svg">
-            <path d="M175.27,197H52.11a9,9,0,0,1-6.37-15.36l61.59-61.59a9,9,0,0,1,12.72,0l61.59,61.59A9,9,0,0,1,175.27,197Z" fill="#4f46e5"/>
-            <path d="M181.64,15.36,15.36,181.64A9,9,0,0,1,0,175.27V121.69a9,9,0,0,1,2.64-6.37L115.32,2.64A9,9,0,0,1,121.69,0h53.58A9,9,0,0,1,181.64,15.36Z" fill="#4f46e5"/>
+            <path d="M175.27,197H52.11a9,9,0,0,1-6.37-15.36l61.59-61.59a9,9,0,0,1,12.72,0l61.59,61.59A9,9,0,0,1,175.27,197Z" fill=""/>
+            <path d="M181.64,15.36,15.36,181.64A9,9,0,0,1,0,175.27V121.69a9,9,0,0,1,2.64-6.37L115.32,2.64A9,9,0,0,1,121.69,0h53.58A9,9,0,0,1,181.64,15.36Z" fill=""/>
           </svg>
-          Kotec Labs
+          Kotec
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -79,11 +79,11 @@ export default function Example() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <Popover.Group className="hidden lg:flex">
+        <Popover.Group className="items-baseline hidden lg:flex">
           <Popover className="relative">
           {({ open }) => (
           <>
-            <Popover.Button className={`${open ? '' : 'text-opacity-90'} group inline-flex items-center rounded-md bg-white px-5 py-2.5 text-base font-medium text-indigo-600 hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}>
+            <Popover.Button className={`${open ? '' : 'text-opacity-90'} group inline-flex items-center rounded-md bg-white dark:bg-black px-3 py-2 text-sm font-medium text-indigo-600 dark:text-neutral-200/60 hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}>
               Послуги
               <ChevronDownIcon className={`${open ? '' : 'text-opacity-70 rotate-180'}
                   ml-2 h-5 w-5 text-indigo-600 transition duration-150 ease-in-out group-hover:text-opacity-80`}
@@ -124,7 +124,7 @@ export default function Example() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-medium leading-6 text-gray-900 hover:bg-gray-100"
                     >
                       <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
                       {item.name}
@@ -145,7 +145,7 @@ export default function Example() {
             <Popover.Button
               className={`
                 ${open ? '' : 'text-opacity-90'}
-                group inline-flex items-center rounded-md bg-white px-5 py-2.5 text-base font-medium text-indigo-600 hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
+                group inline-flex items-center rounded-md bg-white dark:bg-black px-3 py-2 text-sm fonmedium dark:text-neutral-200/60 dark:hover:text-neutral-200 transition duration-150 text-indigo-600 hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
             >
               <span>Solutions</span>
               <ChevronDownIcon
@@ -209,37 +209,34 @@ export default function Example() {
       </Popover>
       {/* Popover 2 END*/}
 
-          <Link href="#" className="px-5 py-2.5 text-base font-medium leading-6 text-gray-600">
+          <Link href="#" className="px-3 py-2 text-sm font-medium dark:text-neutral-200/60 dark:hover:text-white transition duration-150 leading-6 text-gray-600">
             Портфоліо
           </Link>
-          <Link href="#" className="px-5 py-2.5 text-base font-medium leading-6 text-gray-600">
-            Про нас
-          </Link>
-          <Link href="#" className="px-5 py-2.5 text-base font-medium leading-6 text-gray-600">
+          <Link href="#" className="px-3 py-2 text-sm font-medium dark:text-neutral-200/60 dark:hover:text-white transition duration-150 leading-6 text-gray-600">
             Контакти
           </Link>
-          <Link href="#" className="px-5 py-2.5 text-base font-medium leading-6 text-gray-600">
+          <Link href="#" className="px-3 py-2 text-sm font-medium dark:text-neutral-200/60 dark:hover:text-white transition duration-150 leading-6 text-gray-600">
             Блог
           </Link>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link href="#" className="px-5 py-2.5 text-base font-medium leading-6 text-gray-600">
+          <Link href="#" className="px-3 py-2 text-sm font-medium dark:text-neutral-200/60 dark:hover:text-white transition duration-150 leading-6 text-gray-600">
             Log in <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-3 py-2 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between text-indigo-600 dark:text-indigo-300 text-2xl font-black">
             <Link href="/" className="-m-1.5 p-1.5 flex items-center">
               <svg
-            className="h-6 w-auto mr-2 logo"
+            className="h-4 dark:text-neutral-200/80 w-auto mr-2 logo"
             viewBox="0 0 197 197"
-            fill="#4f46e5"
+            fill="#fff"
             xmlns="http://www.w3.org/2000/svg">
-            <path d="M175.27,197H52.11a9,9,0,0,1-6.37-15.36l61.59-61.59a9,9,0,0,1,12.72,0l61.59,61.59A9,9,0,0,1,175.27,197Z" fill="#4f46e5"/>
-            <path d="M181.64,15.36,15.36,181.64A9,9,0,0,1,0,175.27V121.69a9,9,0,0,1,2.64-6.37L115.32,2.64A9,9,0,0,1,121.69,0h53.58A9,9,0,0,1,181.64,15.36Z" fill="#4f46e5"/>
+            <path d="M175.27,197H52.11a9,9,0,0,1-6.37-15.36l61.59-61.59a9,9,0,0,1,12.72,0l61.59,61.59A9,9,0,0,1,175.27,197Z" fill="none"/>
+            <path d="M181.64,15.36,15.36,181.64A9,9,0,0,1,0,175.27V121.69a9,9,0,0,1,2.64-6.37L115.32,2.64A9,9,0,0,1,121.69,0h53.58A9,9,0,0,1,181.64,15.36Z" fill="none"/>
           </svg>
           Kotec Labs
             </Link>
