@@ -83,7 +83,7 @@ export default function Example() {
           <Popover className="relative">
           {({ open }) => (
           <>
-            <Popover.Button className={`${open ? '' : 'text-opacity-90'} group inline-flex items-center rounded-md bg-white dark:bg-black px-3 py-2 text-sm font-medium text-indigo-600 dark:text-neutral-200/60 hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}>
+            <Popover.Button className={`${open ? '' : 'text-opacity-90'} group inline-flex items-center rounded-md bg-white dark:bg-black px-3 py-2 text-sm font-medium text-indigo-600 dark:text-neutral-200/60 hover:text-opacity-100 focus:outline-none`}>
               Послуги
               <ChevronDownIcon className={`${open ? '' : 'text-opacity-70 rotate-180'}
                   ml-2 h-5 w-5 text-indigo-600 transition duration-150 ease-in-out group-hover:text-opacity-80`}
@@ -104,7 +104,7 @@ export default function Example() {
                   {products.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative -m-3 flex items-center gap-x-4 rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+                      className="group relative -m-3 flex items-center gap-x-4 rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                         <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
@@ -145,9 +145,9 @@ export default function Example() {
             <Popover.Button
               className={`
                 ${open ? '' : 'text-opacity-90'}
-                group inline-flex items-center rounded-md bg-white dark:bg-black px-3 py-2 text-sm fonmedium dark:text-neutral-200/60 dark:hover:text-neutral-200 transition duration-150 text-indigo-600 hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
+                group inline-flex items-center rounded-md bg-white dark:bg-black px-3 py-2 text-sm fonmedium dark:text-neutral-200/60 dark:hover:text-neutral-200 transition duration-150 text-indigo-600 hover:text-opacity-100 focus:outline-none`}
             >
-              <span>Solutions</span>
+              <span>Підтримка</span>
               <ChevronDownIcon
                 className={`${open ? '' : 'text-opacity-70 rotate-180'}
                   ml-2 h-5 w-5 text-indigo-600 transition duration-150 ease-in-out group-hover:text-opacity-80`}
@@ -170,7 +170,7 @@ export default function Example() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+                        className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none"
                       >
                         <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
                           <item.icon aria-hidden="true" />
@@ -189,7 +189,7 @@ export default function Example() {
                   <div className="bg-gray-50 p-4">
                     <a
                       href="##"
-                      className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+                      className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none"
                     >
                       <span className="flex items-center">
                         <span className="text-sm font-medium text-gray-900">
