@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  runtime: 'edge', //27.02.2024
   reactStrictMode: true,
 }
 
