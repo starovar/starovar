@@ -62,7 +62,7 @@ const FeaturesSection = () => {
 		<div>
 			<div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
 				<div className="lg:col-start-2">
-					<h3 className="text-2xl font-bold tracking-tight sm:text-3xl text-gray-50">Eam nibh gloriatur ex</h3>
+					<h3 className="text-2xl font-bold tracking-tight sm:text-3xl text-gray-50">Eam =======1 nibh gloriatur ex</h3>
 					<p className="mt-3 text-lg text-gray-400">Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te latine theophrastus. Ea his tale nibh dissentias, mei exerci tamquam euripidis cu.</p>
 					<div className="mt-12 space-y-12">
 						<div className="flex">
