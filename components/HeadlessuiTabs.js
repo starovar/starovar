@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Tab, Transition } from '@headlessui/react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -133,7 +134,7 @@ export default function Example() {
                 <li>{post.shareCount} shares</li>
               </ul>
 
-              <a
+              <Link
                 href="#"
                 className={classNames(
                   'absolute inset-0 rounded-md',

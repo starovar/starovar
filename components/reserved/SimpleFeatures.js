@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react"
 
 const SimpleFeatures = () => {
@@ -12,42 +13,42 @@ const SimpleFeatures = () => {
 		<div className="flex flex-col px-8 py-6">
 			<h2 className="mb-2 text-lg font-semibold sm:text-xl title-font text-gray-100">Components</h2>
 			<p className="flex-1 mb-4 text-base leading-relaxed text-gray-400">Individual components that can be re-used multiple times in your designs.</p>
-			<a className="inline-flex items-center space-x-2 text-sm text-violet-400" href="/components">
+			<Link className="inline-flex items-center space-x-2 text-sm text-violet-400" href="/components">
 				<span>Learn More</span>
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
 					<path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
 				</svg>
-			</a>
+			</Link>
 		</div>
 		<div className="flex flex-col px-8 py-6 lg:border-none xl:border-solid">
 			<h2 className="mb-2 text-lg font-semibold sm:text-xl title-font text-gray-100">Sections</h2>
 			<p className="flex-1 mb-4 text-base leading-relaxed text-gray-400">Pre-made building blocks that you can stack on top of each other like Legos to build a website of your own in minutes.</p>
-			<a className="inline-flex items-center space-x-2 text-sm text-violet-400" href="/sections">
+			<Link className="inline-flex items-center space-x-2 text-sm text-violet-400" href="/sections">
 				<span>Learn More</span>
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
 					<path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
 				</svg>
-			</a>
+			</Link>
 		</div>
 		<div className="flex flex-col px-8 py-6">
 			<h2 className="mb-2 text-lg font-semibold sm:text-xl title-font text-gray-100">Templates</h2>
 			<p className="flex-1 mb-4 text-base leading-relaxed text-gray-400">Full pages that showcase pieces of what you can achieve with the building blocks that are in this UI kit.</p>
-			<a className="inline-flex items-center space-x-2 text-sm text-violet-400" href="/templates">
+			<Link className="inline-flex items-center space-x-2 text-sm text-violet-400" href="/templates">
 				<span>Learn More</span>
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
 					<path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
 				</svg>
-			</a>
+			</Link>
 		</div>
 		<div className="flex flex-col px-8 py-6">
 			<h2 className="mb-2 text-lg font-semibold sm:text-xl title-font text-gray-100">Customization</h2>
 			<p className="flex-1 mb-4 text-base leading-relaxed text-gray-400">Choose your primary color from any of the Tailwind CSS 2.0 colors. You can also view all of the components in our light and dark themes.</p>
-			<a className="inline-flex items-center space-x-2 text-sm text-violet-400" href="/docs">
+			<Link className="inline-flex items-center space-x-2 text-sm text-violet-400" href="/docs">
 				<span>Learn More</span>
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
 					<path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
 				</svg>
-			</a>
+			</Link>
 		</div>
 	</div>
 </section>

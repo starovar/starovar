@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import Image from "next/image";
 
 const FeaturesSection = () => {
     return (
@@ -55,7 +56,7 @@ const FeaturesSection = () => {
 				</div>
 			</div>
 			<div aria-hidden="true" className="mt-10 lg:mt-0">
-				<img src="https://source.unsplash.com/random/360x480" alt="" className="mx-auto rounded-lg shadow-lg bg-gray-500" />
+				<Image src="https://source.unsplash.com/random/360x480" alt="" className="mx-auto rounded-lg shadow-lg bg-gray-500" />
 			</div>
 		</div>
 		<div>
@@ -106,7 +107,7 @@ const FeaturesSection = () => {
 					</div>
 				</div>
 				<div className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
-					<img src="https://source.unsplash.com/random/361x481" alt="" className="mx-auto rounded-lg shadow-lg bg-gray-500" />
+					<Image src="https://source.unsplash.com/random/361x481" alt="" className="mx-auto rounded-lg shadow-lg bg-gray-500" />
 				</div>
 			</div>
 		</div>
