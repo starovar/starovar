@@ -56,7 +56,7 @@ const FeaturesSection = () => {
 				</div>
 			</div>
 			<div aria-hidden="true" className="mt-10 lg:mt-0">
-				<Image src="https://source.unsplash.com/random/360x480" alt="" className="mx-auto rounded-lg shadow-lg bg-gray-500" />
+				<Image src="https://source.unsplash.com/random/360x480" alt="" width={360} height={480} className="mx-auto rounded-lg shadow-lg bg-gray-500" />
 			</div>
 		</div>
 		<div>
@@ -107,7 +107,7 @@ const FeaturesSection = () => {
 					</div>
 				</div>
 				<div className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
-					<Image src="https://source.unsplash.com/random/361x481" alt="" className="mx-auto rounded-lg shadow-lg bg-gray-500" />
+					<Image src="https://source.unsplash.com/random/361x481" alt="" width={480} height={360} className="mx-auto rounded-lg shadow-lg bg-gray-500" />
 				</div>
 			</div>
 		</div>
