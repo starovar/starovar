@@ -83,10 +83,10 @@ export default function Example() {
           <Popover className="relative">
           {({ open }) => (
           <>
-            <Popover.Button className={`${open ? '' : 'text-opacity-90'} group inline-flex items-center rounded-md bg-white dark:bg-black px-3 py-2 text-sm font-medium text-indigo-600 dark:text-neutral-200/60 hover:text-opacity-100 focus:outline-none`}>
+            <Popover.Button className={`${open ? '' : 'text-opacity-90'} group inline-flex items-center transition duration-150 rounded-md bg-white dark:bg-black px-3 py-2 text-sm font-medium text-indigo-600 dark:hover:text-neutral-200 dark:text-neutral-200/60 hover:text-opacity-100 focus:outline-none`}>
               Послуги
-              <ChevronDownIcon className={`${open ? '' : 'text-opacity-70 rotate-180'}
-                  ml-2 h-5 w-5 text-indigo-600 transition duration-150 ease-in-out group-hover:text-opacity-80`}
+              <ChevronDownIcon className={`${open ? '' : 'text-opacity-70 transition duration-150 rotate-180'}
+                  ml-2 h-5 w-5 text-indigo-600 transition duration-150 dark:text-neutral-200/60 ease-in-out group-hover:text-opacity-80`}
                 aria-hidden="true" />
             </Popover.Button>
 
