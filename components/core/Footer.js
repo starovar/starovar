@@ -102,7 +102,7 @@ function MobileMenu({ title, links, customClass }) {
         </li>
       </ul>
       <p className="flex text-xs justify-center text-gray-500 dark:text-royal-lightgray leading-6 md:py-0 lg:py-0 py-4">
-      &copy; 2023 Kotec, Inc.
+      &copy; 2025 Starovar, Inc.
     </p>
     </nav>
   </div>
