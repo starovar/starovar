@@ -10,6 +10,7 @@ import FeaturesBlog from '@/components/core/FeaturesBlog'
 import GeometryDecoration from '@/components/core/GeometryDecoration'
 import FaqAccordionExt from '@/components/core/FaqAccordionExt'
 import WebsiteSection from '@/components/showcasecards/WebsiteSection';
+import BreweryPage from '@/components/BreweryPage';
 
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
        <main className={styles.main}>
+        <BreweryPage />
         <HeroSectionExt />
         <FeaturesSection />
         <NextCards />
