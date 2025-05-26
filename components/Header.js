@@ -9,16 +9,17 @@ import {
   FingerPrintIcon,
   SquaresPlusIcon,
   XMarkIcon,
+  BeakerIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import { useTheme } from 'next-themes'
 
 const products = [
-  { name: 'Веб-дизайн', description: 'Отримайте унікальний дизайн для вашого сайту, що залишить враження', href: '#', icon: ChartPieIcon },
-  { name: 'Брендінг', description: 'Створимо легендарний бренд, який запам’ятають на довго', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Маркетинг', description: 'Сучасні маркетингові рішення від стратегії до втілення у життя', href: '#', icon: FingerPrintIcon },
-  { name: 'Управління веб-сайтами', description: 'Забезпечимо стабільність та безпеку вашого сайту.', href: '#', icon: SquaresPlusIcon },
-  { name: 'Електронна комерція', description: 'Розробка та підтримка сучасних інтернет магазинів', href: '#', icon: ArrowPathIcon },
+  { name: 'Розливне пиво', description: 'Доступні різні обєми КЕГ-діжок на 20, 30 та 50 літрів.', href: '#', icon: BeakerIcon },
+  { name: 'Пляшкове пиво', description: 'Кращі сорти пива представлені у скляній або ПЕТ тарі', href: '#', icon: BeakerIcon },
+ // { name: 'Маркетинг', description: 'Сучасні маркетингові рішення від стратегії до втілення у життя', href: '#', icon: FingerPrintIcon },
+ // { name: 'Управління веб-сайтами', description: 'Забезпечимо стабільність та безпеку вашого сайту.', href: '#', icon: SquaresPlusIcon },
+ //{ name: 'Електронна комерція', description: 'Розробка та підтримка сучасних інтернет магазинів', href: '#', icon: ArrowPathIcon },
 ]
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
@@ -84,7 +85,7 @@ export default function Example() {
           {({ open }) => (
           <>
             <Popover.Button className={`${open ? '' : 'text-opacity-90'} group inline-flex items-center transition duration-150 rounded-md bg-white dark:bg-black px-3 py-2 text-sm font-medium text-indigo-600 dark:hover:text-neutral-200 dark:text-neutral-200/60 hover:text-opacity-100 focus:outline-none`}>
-              Послуги
+              Ассортимент пива
               <ChevronDownIcon className={`${open ? '' : 'text-opacity-70 transition duration-150 rotate-180'}
                   ml-2 h-5 w-5 text-indigo-600 transition duration-150 dark:text-neutral-200/60 ease-in-out group-hover:text-opacity-80`}
                 aria-hidden="true" />
@@ -99,8 +100,8 @@ export default function Example() {
               leaveFrom="transform scale-100 opacity-100"
               leaveTo="transform scale-75 opacity-0"
             >
-              <Popover.Panel className="absolute lg:max-w-5xl -left-44 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                <div className="relative grid gap-8 bg-white p-7 lg:grid-cols-3">
+              <Popover.Panel className="absolute lg:max-w-3xl -left-44 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                <div className="relative grid gap-8 bg-white p-7 lg:grid-cols-2">
                   {products.map((item) => (
                     <div
                       key={item.name}
@@ -147,7 +148,7 @@ export default function Example() {
                 ${open ? '' : 'text-opacity-90'}
                 group inline-flex items-center rounded-md bg-white dark:bg-black px-3 py-2 text-sm fonmedium dark:text-neutral-200/60 dark:hover:text-neutral-200 transition duration-150 text-indigo-600 hover:text-opacity-100 focus:outline-none`}
             >
-              <span>Підтримка</span>
+              <span>НапоЇ</span>
               <ChevronDownIcon
                 className={`${open ? '' : 'text-opacity-70 rotate-180'}
                   ml-2 h-5 w-5 text-indigo-600 transition duration-150 ease-in-out group-hover:text-opacity-80`}
@@ -210,13 +211,13 @@ export default function Example() {
       {/* Popover 2 END*/}
 
           <Link href="#" className="px-3 py-2 text-sm font-medium dark:text-neutral-200/60 dark:hover:text-white transition duration-150 leading-6 text-gray-600">
-            Портфоліо
+            ПЕТ тара
+          </Link>
+          <Link href="#" className="px-3 py-2 text-sm font-medium dark:text-neutral-200/60 dark:hover:text-white transition duration-150 leading-6 text-gray-600">
+            Устаткування
           </Link>
           <Link href="#" className="px-3 py-2 text-sm font-medium dark:text-neutral-200/60 dark:hover:text-white transition duration-150 leading-6 text-gray-600">
             Контакти
-          </Link>
-          <Link href="#" className="px-3 py-2 text-sm font-medium dark:text-neutral-200/60 dark:hover:text-white transition duration-150 leading-6 text-gray-600">
-            Блог
           </Link>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -238,7 +239,7 @@ export default function Example() {
             <path d="M175.27,197H52.11a9,9,0,0,1-6.37-15.36l61.59-61.59a9,9,0,0,1,12.72,0l61.59,61.59A9,9,0,0,1,175.27,197Z" fill="none"/>
             <path d="M181.64,15.36,15.36,181.64A9,9,0,0,1,0,175.27V121.69a9,9,0,0,1,2.64-6.37L115.32,2.64A9,9,0,0,1,121.69,0h53.58A9,9,0,0,1,181.64,15.36Z" fill="none"/>
           </svg>
-          Kotec Labs
+          Starovar
             </Link>
             <button
               type="button"
@@ -256,7 +257,7 @@ export default function Example() {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-gray-900 text-base font-semibold leading-7 hover:bg-gray-50">
-                        Послуги
+                        Ассортимент пива
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
                           aria-hidden="true"
@@ -278,16 +279,22 @@ export default function Example() {
                   )}
                 </Disclosure>
                 <Link href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                  Features
+                  НапоЇ
                 </Link>
                 <Link href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                  Marketplace
+                  ПЕТ тара
                 </Link>
                 <Link
                   href="#"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Company
+                  Устаткування
+                </Link>
+                <Link
+                  href="#"
+                  className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Контакти
                 </Link>
               </div>
               <div className="py-6">
