@@ -13,10 +13,13 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import { useTheme } from 'next-themes'
+import { IoBeer } from 'react-icons/io5'
+import { FaWineBottle } from 'react-icons/fa'
+
 
 const products = [
-  { name: 'Розливне пиво', description: 'Доступні різні обєми КЕГ-діжок на 20, 30 та 50 літрів.', href: '#', icon: BeakerIcon },
-  { name: 'Пляшкове пиво', description: 'Кращі сорти пива представлені у скляній або ПЕТ тарі', href: '#', icon: BeakerIcon },
+  { name: 'Розливне пиво', description: 'Доступні різні обєми КЕГ-діжок на 20, 30 та 50 літрів.', href: '#', icon: IoBeer },
+  { name: 'Пляшкове пиво', description: 'Кращі сорти пива представлені у скляній або ПЕТ тарі', href: '#', icon: FaWineBottle },
  // { name: 'Маркетинг', description: 'Сучасні маркетингові рішення від стратегії до втілення у життя', href: '#', icon: FingerPrintIcon },
  // { name: 'Управління веб-сайтами', description: 'Забезпечимо стабільність та безпеку вашого сайту.', href: '#', icon: SquaresPlusIcon },
  //{ name: 'Електронна комерція', description: 'Розробка та підтримка сучасних інтернет магазинів', href: '#', icon: ArrowPathIcon },
@@ -67,7 +70,7 @@ export default function Example() {
             <path d="M175.27,197H52.11a9,9,0,0,1-6.37-15.36l61.59-61.59a9,9,0,0,1,12.72,0l61.59,61.59A9,9,0,0,1,175.27,197Z" fill=""/>
             <path d="M181.64,15.36,15.36,181.64A9,9,0,0,1,0,175.27V121.69a9,9,0,0,1,2.64-6.37L115.32,2.64A9,9,0,0,1,121.69,0h53.58A9,9,0,0,1,181.64,15.36Z" fill=""/>
           </svg>
-          Kotec
+          Starovar
           </Link>
         </div>
         <div className="flex lg:hidden">
