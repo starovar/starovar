@@ -13,7 +13,7 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import { useTheme } from 'next-themes'
-import { IoBeer } from 'react-icons/io5'
+import { IoBeer, IoDocumentAttachOutline } from 'react-icons/io5'
 import { FaWineBottle } from 'react-icons/fa'
 
 
@@ -25,8 +25,8 @@ const products = [
  //{ name: 'Електронна комерція', description: 'Розробка та підтримка сучасних інтернет магазинів', href: '#', icon: ArrowPathIcon },
 ]
 const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
+  { name: 'Сертифікати', href: '#', icon: IoDocumentAttachOutline },
+  { name: 'Контакти', href: '#', icon: PhoneIcon },
 ]
 const solutions =[
   {
@@ -40,12 +40,6 @@ const solutions =[
     description: 'Create your own targeted content',
     href: '##',
     icon: IconTwo,
-  },
-  {
-    name: 'Reports',
-    description: 'Keep track of your growth',
-    href: '##',
-    icon: IconThree,
   },
 ]
 
@@ -87,10 +81,10 @@ export default function Example() {
           <Popover className="relative">
           {({ open }) => (
           <>
-            <Popover.Button className={`${open ? '' : 'text-opacity-90'} group inline-flex items-center transition duration-150 rounded-md bg-white dark:bg-black px-3 py-2 text-sm font-medium text-indigo-600 dark:hover:text-neutral-200 dark:text-neutral-200/60 hover:text-opacity-100 focus:outline-none`}>
+            <Popover.Button className={`${open ? '' : ''} group inline-flex items-center transition duration-150 rounded-md bg-white dark:bg-black px-3 py-2 text-base font-medium text-indigo-600 dark:hover:text-zinc-100 dark:text-zinc-300 focus:outline-none`}>
               Ассортимент пива
-              <ChevronDownIcon className={`${open ? '' : 'text-opacity-70 transition duration-150 rotate-180'}
-                  ml-2 h-5 w-5 text-indigo-600 transition duration-150 dark:text-neutral-200/60 ease-in-out group-hover:text-opacity-80`}
+              <ChevronDownIcon className={`${open ? '' : 'transition duration-150 rotate-180'}
+                  ml-2 h-5 w-5 text-indigo-600 transition duration-150 dark:text-zinc-300 ease-in-out group-hover:text-zinc-100`}
                 aria-hidden="true" />
             </Popover.Button>
 
@@ -103,34 +97,34 @@ export default function Example() {
               leaveFrom="transform scale-100 opacity-100"
               leaveTo="transform scale-75 opacity-0"
             >
-              <Popover.Panel className="absolute lg:max-w-3xl -left-44 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                <div className="relative grid gap-8 bg-white p-7 lg:grid-cols-2">
+              <Popover.Panel className="absolute lg:max-w-3xl -left-44 top-3/4 z-10 mt-3 w-screen max-w-md overflow-hidden rounded-lg shadow-2xl shadow-orange-500/15 ring-1 ring-white ring-opacity-20">
+                <div className="relative grid gap-8 bg-black p-7 lg:grid-cols-2">
                   {products.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative -m-3 flex items-center gap-x-4 rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50"
+                      className="group relative -m-3 flex items-center gap-x-4 rounded-lg p-2 transition duration-150 ease-in-out hover:bg-zinc-800"
                     >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                      <div className="flex h-16 w-16 flex-none items-center justify-center rounded-lg bg-amber-700">
+                        <item.icon className="h-8 w-8 text-gray-300 group-hover:text-gray-100" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
-                        <Link href={item.href} className="block text-sm font-medium text-gray-900">
+                        <Link href={item.href} className=" group-hover:text-zinc-100 block text-base font-medium text-zinc-300">
                           {item.name}
                           <span className="absolute inset-0" />
                         </Link>
-                        <p className="mt-1 text-sm text-gray-600">{item.description}</p>
+                        <p className=" group-hover:text-zinc-400 mt-1 text-sm text-gray-500">{item.description}</p>
                       </div>
                     </div>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                <div className="group grid grid-cols-2 divide-x divide-gray-900/25 border-t dark:border-royal-gray/50 bg-black">
                   {callsToAction.map((item) => (
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-medium leading-6 text-gray-900 hover:bg-gray-100"
+                      className="flex items-center transition duration-150 ease-in-out justify-center gap-x-2.5 p-3 text-sm font-medium leading-6 text-zinc-600 hover:text-zinc-500"
                     >
-                      <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+                      <item.icon className="h-5 w-5 flex-none text-zinc-600" aria-hidden="true" />
                       {item.name}
                     </Link>
                   ))}
@@ -148,13 +142,13 @@ export default function Example() {
           <>
             <Popover.Button
               className={`
-                ${open ? '' : 'text-opacity-90'}
-                group inline-flex items-center rounded-md bg-white dark:bg-black px-3 py-2 text-sm fonmedium dark:text-neutral-200/60 dark:hover:text-neutral-200 transition duration-150 text-indigo-600 hover:text-opacity-100 focus:outline-none`}
+                ${open ? 'dark:text-amber-600' : ' text-opacity-90'}
+                group inline-flex items-center rounded-md bg-white dark:bg-black px-3 py-2 text-base font-medium dark:text-zinc-300 dark:hover:text-zinc-200 transition duration-150 text-indigo-600 hover:text-opacity-100 focus:outline-none`}
             >
               <span>НапоЇ</span>
               <ChevronDownIcon
-                className={`${open ? '' : 'text-opacity-70 rotate-180'}
-                  ml-2 h-5 w-5 text-indigo-600 transition duration-150 ease-in-out group-hover:text-opacity-80`}
+                className={`${open ? 'dark:text-amber-600' : 'text-opacity-70 rotate-180'}
+                  ml-2 h-5 w-5 text-indigo-600 transition duration-150 dark:text-zinc-300 ease-in-out group-hover:text-zinc-200`}
                 aria-hidden="true"
               />
             </Popover.Button>
@@ -167,9 +161,9 @@ export default function Example() {
               leaveFrom="transform scale-100 opacity-100"
               leaveTo="transform scale-75 opacity-0"
             >
-              <Popover.Panel className="absolute z-10 mt-3 w-screen max-w-md -left-76 transform px-4 sm:px-0 lg:max-w-5xl">
+              <Popover.Panel className="absolute z-10 top-3/4 mt-3 w-screen max-w-md -left-76 rounded-lg transform px-4 sm:px-0 lg:max-w-3xl shadow-2xl shadow-orange-500/15 ring-1 ring-white ring-opacity-20">
                 <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                  <div className="relative grid gap-8 bg-white p-7 lg:grid-cols-3">
+                  <div className="relative grid gap-8 bg-white dark:bg-black p-7 lg:grid-cols-2">
                     {solutions.map((item) => (
                       <Link
                         key={item.name}
@@ -190,7 +184,7 @@ export default function Example() {
                       </Link>
                     ))}
                   </div>
-                  <div className="bg-gray-50 p-4">
+                  <div className="bg-black p-4">
                     <Link
                       href="##"
                       className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none"
