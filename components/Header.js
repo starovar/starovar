@@ -30,14 +30,14 @@ const callsToAction = [
 ]
 const solutions =[
   {
-    name: 'Insights',
-    description: 'Measure actions your users take',
+    name: 'Розливні напої',
+    description: 'Яблучний сидр, мохіто, квас і лимонад оптом в КЕГах',
     href: '##',
     icon: IconOne,
   },
   {
-    name: 'Automations',
-    description: 'Create your own targeted content',
+    name: 'Пляшкові напої',
+    description: 'Слабоалкогольні і безалкогольні напої у склі оптом',
     href: '##',
     icon: IconTwo,
   },
@@ -112,7 +112,7 @@ export default function Example() {
                           {item.name}
                           <span className="absolute inset-0" />
                         </Link>
-                        <p className=" group-hover:text-zinc-400 mt-1 text-sm text-gray-500">{item.description}</p>
+                        <p className=" group-hover:text-zinc-400 mt-1 text-sm text-zinc-500">{item.description}</p>
                       </div>
                     </div>
                   ))}
@@ -168,16 +168,16 @@ export default function Example() {
                       <Link
                         key={item.name}
                         href={item.href}
-                        className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none"
+                        className="group -m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-zinc-800 focus:outline-none"
                       >
-                        <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
+                        <div className="flex h-16 w-16 flex-none shrink-0 items-center justify-center text-white">
                           <item.icon aria-hidden="true" />
                         </div>
                         <div className="ml-4">
-                          <p className="text-sm font-medium text-gray-900">
+                          <p className="group-hover:text-zinc-100 text-base font-medium text-zinc-300">
                             {item.name}
                           </p>
-                          <p className="text-sm text-gray-600">
+                          <p className="group-hover:text-zinc-400 text-sm text-zinc-500">
                             {item.description}
                           </p>
                         </div>
@@ -190,12 +190,12 @@ export default function Example() {
                       className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none"
                     >
                       <span className="flex items-center">
-                        <span className="text-sm font-medium text-gray-900">
-                          Documentation
+                        <span className="text-sm font-medium text-zinc-400">
+                          Документація
                         </span>
                       </span>
-                      <span className="block text-sm text-gray-500">
-                        Start integrating products and tools
+                      <span className="block text-sm text-zinc-500">
+                        Почніть працювати з нами
                       </span>
                     </Link>
                   </div>
@@ -207,13 +207,13 @@ export default function Example() {
       </Popover>
       {/* Popover 2 END*/}
 
-          <Link href="#" className="px-3 py-2 text-sm font-medium dark:text-neutral-200/60 dark:hover:text-white transition duration-150 leading-6 text-gray-600">
+          <Link href="#" className="px-3 py-2 text-base font-medium dark:text-neutral-200/60 dark:hover:text-white transition duration-150 leading-6 text-gray-600">
             ПЕТ тара
           </Link>
-          <Link href="#" className="px-3 py-2 text-sm font-medium dark:text-neutral-200/60 dark:hover:text-white transition duration-150 leading-6 text-gray-600">
+          <Link href="#" className="px-3 py-2 text-base font-medium dark:text-neutral-200/60 dark:hover:text-white transition duration-150 leading-6 text-gray-600">
             Устаткування
           </Link>
-          <Link href="#" className="px-3 py-2 text-sm font-medium dark:text-neutral-200/60 dark:hover:text-white transition duration-150 leading-6 text-gray-600">
+          <Link href="#" className="px-3 py-2 text-base font-medium dark:text-neutral-200/60 dark:hover:text-white transition duration-150 leading-6 text-gray-600">
             Контакти
           </Link>
         </Popover.Group>
