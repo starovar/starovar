@@ -106,11 +106,20 @@ a {
 .draw-path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: draw 8s ease-out forwards;
+  stroke: currentColor;
+  fill: transparent;
+  animation: draw 8s ease forwards, fillColor 1s ease-in-out forwards;
+  animation-delay: 0s, 2s;
 }
 
 @keyframes draw {
   to {
     stroke-dashoffset: 0;
+  }
+}
+@keyframes fillColor {
+  to {
+    fill: darkgoldenrod;
+    stroke: none;
   }
 }
